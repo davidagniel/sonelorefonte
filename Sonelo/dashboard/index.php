@@ -155,7 +155,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading">
                            
-                              <a class="nav-link accordion-button collapsed"  href="<?=$_SESSION['url']?>contact"><span data-feather="phone"></span>Contact</a>
+                              <a class="nav-link text-dark accordion-button collapsed"  href="<?=$_SESSION['url']?>contact"><span data-feather="phone"></span>Contact</a>
                            
                         </h2>
                         
