@@ -51,7 +51,9 @@
         padding: 1rem;
       }
     }
-  
+   .btmenu{
+    backgroundColor:#D9D9D9;
+   }
   </style>
 </head>
 <body>
@@ -101,7 +103,7 @@
                     <!-- Certification Section -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button  class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 <span data-feather="layers"></span> <span style="color:#6ce364;">Mes certifications<br>Habilitations</span>
                             </button>
                         </h2>
