@@ -155,7 +155,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading">
                            
-                              <a class="nav-link active accordion-button"  href="<?=$_SESSION['url']?>contact"><span data-feather="phone"></span>Contact</a>
+                              <a class="nav-link accordion-button"  href="<?=$_SESSION['url']?>contact"><span data-feather="phone"></span>Contact</a>
                            
                         </h2>
                         
@@ -170,7 +170,7 @@
                             </button>
                         </h2>
                         <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
-                            <div class="accordion-body" style="">
+                            <div class="accordion-body bg-warning text-white" >
                                 <ul class="list-unstyled">
                                 <li><a class="nav-link active" href="<?=$_SESSION['url']?>view_formation_initiale">Formation initiale</a></li>
                                  
