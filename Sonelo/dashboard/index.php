@@ -85,7 +85,7 @@
  <!-- Profil Section -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 <span data-feather="user"></span> <span style="color:#c90e0e;"> Profil</span>
                             </button>
                         </h2>
@@ -155,7 +155,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading">
                            
-                              <a class="nav-link accordion-button"  href="<?=$_SESSION['url']?>contact"><span data-feather="phone"></span>Contact</a>
+                              <a class="nav-link accordion-button collapsed"  href="<?=$_SESSION['url']?>contact"><span data-feather="phone"></span>Contact</a>
                            
                         </h2>
                         
