@@ -58,7 +58,7 @@
 
 <nav class="navbar navbar-dark bg-dark d-md-none">
     <div class="container-fluid">
-      <button class="btn btn-outline-dark" id="toggleSidebar">
+      <button class="btn btn-outline-light" id="toggleSidebar">
         ☰
       </button>
       <span class="navbar-brand mb-0 h1"> <img src="image/PNG/Logo-sans-slogan.png" width="100" height="100" alt="logo"/></span>
