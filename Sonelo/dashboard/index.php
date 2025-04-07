@@ -8,28 +8,67 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      min-height: 100vh;
+      margin: 0;
+    }
+
+    .wrapper {
       display: flex;
+      min-height: 100vh;
     }
+
     #sidebar {
-      min-width: 200px;
-      max-width: 250px;
+      width: 250px;
+      background-color: #343a40;
+      color: white;
+      padding: 1rem;
     }
+
+    #sidebar .nav-link {
+      color: white;
+    }
+
+    #main-content {
+      flex-grow: 1;
+      padding: 2rem;
+    }
+
+    /* Mobile styles */
     @media (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
       #sidebar {
-        width: 100%;
+        position: fixed;
+        top: 56px; /* height of navbar */
+        left: -250px;
+        height: 100%;
+        z-index: 1030;
+        transition: left 0.3s ease;
+      }
+
+      #sidebar.show {
+        left: 0;
+      }
+
+      #main-content {
+        padding: 1rem;
       }
     }
+  
   </style>
 </head>
 <body>
 
+<nav class="navbar navbar-dark bg-dark d-md-none">
+    <div class="container-fluid">
+      <button class="btn btn-outline-dark" id="toggleSidebar">
+        ☰
+      </button>
+      <span class="navbar-brand mb-0 h1"> <img src="image/PNG/Logo-sans-slogan.png" width="100" height="100" alt="logo"/></span>
+    </div>
+  </nav>
+
+  <div class="wrapper">
   <!-- Sidebar -->
-  <nav id="sidebar" class="bg-secondary text-dark p-3">
-    <img src="image/PNG/Logo-sans-slogan.png" width="100" height="100" alt="logo"/>
+  <nav id="sidebar" class="d-md-block bg-secondary text-dark p-3">
+ 
     <h4>Menu</h4>
     <ul class="nav flex-column">
       <li class="nav-item">
@@ -42,6 +81,7 @@
         <a href="#" class="nav-link text-dark">Paramètres</a>
       </li>
     </ul>
+
   </nav>
 
   <!-- Main content -->
@@ -50,6 +90,8 @@
     <p>Ceci est le contenu principal de la page.</p>
     <button id="testBtn" class="btn btn-primary">Clique-moi</button>
   </main>
+</div>
+
 
   <!-- jQuery + Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
