@@ -181,7 +181,7 @@
                         </div>
                     </div>
                     <a href="deconnexion.php">Déconnexion</a>
-                </div>
+                
             </div>
 
   </nav>
