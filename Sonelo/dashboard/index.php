@@ -32,13 +32,13 @@
     <h4>Menu</h4>
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a href="#" class="nav-link text-white">Accueil</a>
+        <a href="#" class="nav-link text-dark">Accueil</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link text-white">Profil</a>
+        <a href="#" class="nav-link text-dark">Profil</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link text-white">Paramètres</a>
+        <a href="#" class="nav-link text-dark">Paramètres</a>
       </li>
     </ul>
   </nav>
