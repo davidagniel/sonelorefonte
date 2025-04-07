@@ -28,7 +28,7 @@
 <body>
 
   <!-- Sidebar -->
-  <nav id="sidebar" class="bg-dark text-white p-3">
+  <nav id="sidebar" class="bg-whute text-dark p-3">
     <h4>Menu</h4>
     <ul class="nav flex-column">
       <li class="nav-item">
