@@ -69,7 +69,7 @@
 
   <div class="wrapper">
   <!-- Sidebar -->
-  <nav id="sidebar" class="d-md-block bg-white text-dark p-3">
+  <nav id="sidebar" class="d-md-block bg-secondary text-dark p-3">
  
     <div class="accordion" id="accordionExample">
 
