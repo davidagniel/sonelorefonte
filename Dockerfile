@@ -51,7 +51,7 @@ COPY php.ini /usr/local/etc/php/
 
 # Installer les dépendances Composer dans l'application
 WORKDIR /var/www/html
-RUN mkdir -p frontend/upload && chown -R www-data:www-data frontend/upload && chmod 755 frontend/upload
+RUN mkdir -p upload && chown -R www-data:www-data upload && chmod 755 upload
 
 # Exposer le port 80
 EXPOSE 80

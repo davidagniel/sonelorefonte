@@ -1,13 +1,13 @@
 version: '3.8'
 
 services:
-  websonelo:
+  sonelorefonte:
     build: 
       context: .
       dockerfile: Dockerfile
     ports:
       - "12000:80"
-    container_name: websonelo
+    container_name: sonelorefonte
     volumes:
       - ./Sonelo:/var/www/html
       - ./php.ini:/usr/local/etc/php/php.ini
@@ -20,9 +20,9 @@ services:
       - MYSQL_DATABASE=sonelo
     restart: always
 
-  dbsonelo:
+  dbsonelorefonte:
     image: mariadb:latest
-    container_name: dbsonelo
+    container_name: dbsonelorefonte
     environment:
       MYSQL_ROOT_PASSWORD: 5jcDr5.6?qE7S*
       MYSQL_DATABASE: sonelo
@@ -35,9 +35,9 @@ services:
       - "12001:3306"
     restart: always
 
-  phpmyadminsonelo:
+  phpmyadminsonelorefonte:
     image: phpmyadmin:latest
-    container_name: phpmyadminsonelo
+    container_name: phpmyadminsonelorefonte
     environment:
       PMA_HOST: dbsonelo
       #PMA_USER: sonelo
@@ -45,7 +45,7 @@ services:
     ports:
       - "12002:80"
     depends_on:
-      - dbsonelo
+      - dbsonelorefonte
     restart: always
 
 volumes:
