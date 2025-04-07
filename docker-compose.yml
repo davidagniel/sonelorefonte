@@ -12,7 +12,7 @@ services:
       - ./Sonelo:/var/www/html
       - ./php.ini:/usr/local/etc/php/php.ini
     depends_on:
-      - dbsonelo
+      - dbsonelorefonte
     environment:
       - MYSQL_HOST=dbsonelo
       - MYSQL_USER=sonelo
