@@ -61,7 +61,7 @@
       <button class="btn btn-outline-light" id="toggleSidebar">
         ☰
       </button>
-      <span class="navbar-brand mb-0 h1"> <img src="image/AlerteCertif-accueil.png" width="100" height="100" alt="logo"/></span>
+      <span class="navbar-brand mb-0 h1"> <img src="image/AlerteCertif-accueil.png" width="200" height="100" alt="logo"/></span>
     </div>
   </nav>
 
