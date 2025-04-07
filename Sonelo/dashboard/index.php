@@ -56,7 +56,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-dark bg-dark d-md-none">
+<nav class="navbar navbar-secondary bg-secondary d-md-none">
     <div class="container-fluid">
       <button class="btn btn-outline-light" id="toggleSidebar">
         ☰
