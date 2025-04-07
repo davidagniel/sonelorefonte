@@ -67,23 +67,23 @@
 
   <div class="wrapper">
   <!-- Sidebar -->
-  <nav id="sidebar" class="d-md-block bg-secondary text-dark p-3">
+  <nav id="sidebar" class="d-md-block bg-white text-dark p-3">
  
-  <div class="accordion" id="accordionExample">
+    <div class="accordion" id="accordionExample">
 
 <!-- accueil -->
 
-<div class="accordion-item">
-      <h2 class="accordion-header" id="heading">
+        <div class="accordion-item">
+             <h2 class="accordion-header" id="heading">
          
             <a class="nav-link accordion-button collapsed text-dark"  href="dashboard.php?page=accueil"><span data-feather="tablet"></span>accueil</a>
          
-      </h2>
+            </h2>
       
      
-  </div>
+         </div>
  <!-- Profil Section -->
- <div class="accordion-item">
+                    <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 <span data-feather="user"></span> <span style="color:#c90e0e;"> Profil</span>
@@ -183,12 +183,6 @@
                     <a href="deconnexion.php">Déconnexion</a>
                 </div>
             </div>
-
-
-
-
-
-
 
   </nav>
 
