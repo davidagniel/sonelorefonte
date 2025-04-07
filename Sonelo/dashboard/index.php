@@ -29,7 +29,7 @@
 
   <!-- Sidebar -->
   <nav id="sidebar" class="bg-secondary text-dark p-3">
-    <img src="image/PNG/Logo-PNG.png" width="200" height="200" alt="logo"/>
+    <img src="image/PNG/Logo-sans-slogan.png" width="200" height="200" alt="logo"/>
     <h4>Menu</h4>
     <ul class="nav flex-column">
       <li class="nav-item">
