@@ -29,6 +29,7 @@
 
   <!-- Sidebar -->
   <nav id="sidebar" class="bg-secondary text-dark p-3">
+    <img src="image/Logo-fond-Gris-100" width="50" height="50" alt="logo"/>
     <h4>Menu</h4>
     <ul class="nav flex-column">
       <li class="nav-item">
