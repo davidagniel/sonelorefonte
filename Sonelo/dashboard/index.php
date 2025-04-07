@@ -78,7 +78,7 @@
         <div class="accordion-item">
              <h2 class="accordion-header" id="heading">
          
-            <a class="nav-link accordion-button collapsed text-dark"  href="dashboard.php?page=accueil"><span data-feather="tablet"></span>accueil</a>
+            <a class="nav-link accordion-button collapsed text-dark btmenu"  href="dashboard.php?page=accueil"><span data-feather="tablet"></span>accueil</a>
          
             </h2>
       
@@ -87,7 +87,7 @@
  <!-- Profil Section -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 <span data-feather="user"></span> <span style="color:#c90e0e;"> Profil</span>
                             </button>
                         </h2>
@@ -121,7 +121,7 @@
                     <!-- Coffre-fort Section -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 <span data-feather="archive"></span> <span style="color:#e08b3a;">Mon coffre-fort </span>
                             </button>
                         </h2>
@@ -138,7 +138,7 @@
                      <!-- salarie Section -->
                      <div class="accordion-item">
                         <h2 class="accordion-header" id="heading4">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            <button class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                                 <span data-feather="users"></span> <span style="color:#679bf0;">Mes salariés</span>
                             </button>
                         </h2>
@@ -167,7 +167,7 @@
                      <!-- formation Section -->
                      <div class="accordion-item">
                         <h2 class="accordion-header" id="heading5">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            <button class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
                                 <span data-feather="book"></span> <span style="">Formations</span>
                             </button>
                         </h2>
