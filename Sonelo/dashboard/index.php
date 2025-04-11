@@ -215,7 +215,7 @@
 <div class="d-none d-lg-block bg-secondary">
 
 
-    <h1>Bienvenue</h1>
+<img src="image/AlerteCertif-accueil.png" width="250" height="100" alt="logo"/>
     <p>Ceci est le contenu principal de la page.</p>
     <button id="testBtn" class="btn btn-primary">Clique-moi</button>
   </div>
