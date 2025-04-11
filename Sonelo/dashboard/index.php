@@ -77,11 +77,11 @@
 
   <!-- Deuxième span à droite -->
   <div class="col-6 d-flex justify-content-end align-items-center">
-  <span class="mb-0 h1">
+  
     <a href="#">
       <img src="image/image_profil.png" width="50" height="50" alt="profil">
     </a>
-  </span>
+  
 </div>
 </div>
     </div>
