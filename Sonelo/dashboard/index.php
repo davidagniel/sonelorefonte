@@ -66,7 +66,7 @@
         ☰
       </button>
   
-      <span class="navbar-brand mb-1 h1 ms-auto"> <img src="image/AlerteCertif-accueil.png" width="150" height="70" alt="logo"/></span>
+      <span class="navbar-brand mb-1 h1 ms-auto"> <img src="image/AlerteCertif-accueil.png" width="150" height="50" alt="logo"/></span>
       <div class="row">
         <div class="ms-auto">
       <span class="mb-0 h1"><img src="image/image_societe.png" width="150" height="70" alt="societe"><a href="#"><img src="image/image_profil.png" width="50" height="50" alt="societe"></a></span>
