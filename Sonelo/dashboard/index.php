@@ -61,11 +61,11 @@
 
 <nav class="navbar navbar-secondary bg-secondary d-md-none">
     <div class="container-fluid">
-      <div class="row">
+      
       <button class="btn btn-outline-light" id="toggleSidebar">
         ☰
       </button>
-  </div>
+  
       <span class="navbar-brand mb-1 h1 ms-auto"> <img src="image/AlerteCertif-accueil.png" width="150" height="70" alt="logo"/></span>
       <div class="row">
         <div class="ms-auto">
