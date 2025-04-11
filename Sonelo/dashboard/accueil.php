@@ -28,9 +28,9 @@
                         <td>initiale</td>
                         <td>10/10/2021</td>
                         <td class="text-white" style="background-color:#fd7e14;">10/10/2025</td>
-                        <td><a href="#"><span data-feather="search"></span></a></td>
+                        <td><a href="#" class="text-dark"><span data-feather="search"></span></a></td>
                         <td>09/10/2028</td>
-                        <td><a href="#"> <span data-feather="layers" ></span>
+                        <td><a href="#" class="text-dark"> <span data-feather="layers" ></span>
                         </a></td>
                     </tr>
                 </tbody>
