@@ -36,7 +36,7 @@
     /* Mobile styles */
     @media (max-width: 768px) {
       #sidebar {
-        position: fixed;
+        
         top: 56px; /* height of navbar */
         left: -250px;
         height: 1000px;
