@@ -67,12 +67,23 @@
       </button>
   
       <span class="navbar-brand mb-1 h1 ms-auto"> <img src="image/AlerteCertif-accueil.png" width="150" height="50" alt="logo"/></span>
-      <div class="row">
-        <div class="ms-auto">
-      <span class="navbar-brand mb-0 h1"><img src="image/image_societe.png" width="150" height="70" alt="societe"></span>
-      <span class="navbar-brand mb-0 h1"><a href="#"><img src="image/image_profil.png" width="50" height="50" alt="societe"></a></span>
-      </div>
+      <div class="row align-items-center">
+  <!-- Premier span centré -->
+  <div class="col-12 text-center">
+    <span class="navbar-brand mb-0 h1">
+      <img src="image/image_societe.png" width="150" height="70" alt="societe">
+    </span>
   </div>
+
+  <!-- Deuxième span à droite -->
+  <div class="col-12 text-end">
+    <span class="navbar-brand mb-0 h1">
+      <a href="#">
+        <img src="image/image_profil.png" width="50" height="50" alt="profil">
+      </a>
+    </span>
+  </div>
+</div>
     </div>
   </nav>
 
