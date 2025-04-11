@@ -39,7 +39,7 @@
         position: fixed;
         top: 56px; /* height of navbar */
         left: -250px;
-        height: 100%;
+        height: 1000px;
         z-index: 1030;
         transition: left 0.3s ease;
       }
@@ -53,8 +53,9 @@
       }
 
       .card {
-    width: 100% !important;
+    width: 300 !important;
     overflow-x: auto;
+    position:fixed;
   }
       .card-title {
                 font-size: 1.2rem;
