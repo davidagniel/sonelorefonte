@@ -1,5 +1,5 @@
 
-  <div class="card col-lg-12 col-md-5">
+  <div class="card col-md-5">
     
     <div class="card-header">
       <h2 class="card-title d-flex justify-content-start">Mes certifications</h2>
