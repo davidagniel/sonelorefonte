@@ -64,7 +64,7 @@
       <button class="btn btn-outline-light" id="toggleSidebar">
         ☰
       </button>
-      <span class="navbar-brand mb-0 h1"> <img src="image/AlerteCertif-accueil.png" width="250" height="100" alt="logo"/></span>
+      <span class="navbar-brand mb-0 h1"> <img src="image/AlerteCertif-accueil.png" width="100" height="70" alt="logo"/></span>
     </div>
   </nav>
 
@@ -191,6 +191,9 @@
 
   <!-- Main content -->
   <main class="flex-grow-1 p-4">
+<div 
+
+
     <h1>Bienvenue</h1>
     <p>Ceci est le contenu principal de la page.</p>
     <button id="testBtn" class="btn btn-primary">Clique-moi</button>
