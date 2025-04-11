@@ -212,7 +212,7 @@
 
   <!-- Main content -->
   <main class="flex-grow-1 p-4">
-<div class="d-md-none bg-secondary">
+<div class="d-lg-block bg-secondary">
 
 
     <h1>Bienvenue</h1>
@@ -222,7 +222,7 @@
 
 
 
-  
+
   </main>
 </div>
 
