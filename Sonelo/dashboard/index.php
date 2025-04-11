@@ -52,37 +52,17 @@
         padding: 1rem;
       }
 
-         /* Card ajustée */
-    .card {
-      padding: 15px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Titre de la carte ajusté */
-    .card-header h2 {
-      font-size: 1.5rem; /* Réduit la taille du titre */
-    }
-
-    /* Tableau ajusté pour s'adapter aux petits écrans */
-    .table-responsive {
-      overflow-x: auto; /* Permet de défiler horizontalement */
-    }
-
-    /* Réduction de la taille des images dans la table */
-    .table img {
-      width: 40px;
-      height: 40px;
-    }
-
-    /* Ajustement des padding pour la card body */
-    .card-body {
-      padding: 10px;
-    }
-
-    /* Ajustement de la table */
-    .table th, .table td {
-      font-size: 0.875rem; /* Réduit la taille de la police pour les petits écrans */
-    }
+      .card-title {
+                font-size: 1.2rem;
+            }
+            .table th, .table td {
+                font-size: 0.8rem;
+                padding: 0.5rem;
+            }
+            .table img {
+                width: 30px;
+                height: 30px;
+            }
   
     }
    .btmenu{
