@@ -239,8 +239,8 @@
 <img src="image/image_societe.png" width="200" height="100" alt="logo"/>
   </div>
 
-  <div class="col-lg-4 offset-md-1">
-<a href="#"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
+  <div class="col-lg-4">
+<a href="#" class="ms-auto"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
   </div>
 
   </div>
