@@ -1,4 +1,4 @@
-<div class="col-md-12 p-4" style="max-width: 768px; margin: auto;">
+<div class="col-md-12 p-4 custom-container">
   <div class="card">
     
     <div class="card-header">
@@ -38,3 +38,28 @@
 
   </div>
 </div>
+<style>
+  @media (max-width: 768px) {
+    /* Limite la largeur à 100% sous 768px */
+    .custom-container {
+      max-width: 100% !important;
+      margin: 0 auto;
+    }
+
+    /* Ajuste la taille des images et les marges */
+    .table img {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Modifie le padding pour les petits écrans */
+    .card-body {
+      padding: 10px;
+    }
+
+    /* Modifie la taille du titre */
+    .card-title {
+      font-size: 1.5rem;
+    }
+  }
+</style>
