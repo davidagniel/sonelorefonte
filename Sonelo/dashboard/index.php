@@ -212,14 +212,24 @@
 
   <!-- Main content -->
   <main class="flex-grow-1 p-4">
-<div class="d-none d-lg-block bg-secondary">
+<div class="d-none d-lg-block bg-secondary ">
+<div class="row align-items-center">
 
-
+<div class="col-lg-4">
 <img src="image/AlerteCertif-accueil.png" width="250" height="100" alt="logo"/>
-    <p>Ceci est le contenu principal de la page.</p>
-    <button id="testBtn" class="btn btn-primary">Clique-moi</button>
   </div>
 
+  <div class="col-lg-4">
+<img src="image/photo_societe.png" width="200" height="100" alt="logo"/>
+  </div>
+
+  <div class="col-lg-4 ms-auto">
+<a href="#"><img src="image/photo_profil.png" width="50" height="50" alt="logo"/></a>
+  </div>
+
+
+  </div>
+  </div>
 
 
 
