@@ -1,12 +1,12 @@
-<div class="p-4">
+<div class="col-md-12">
 <div class="card">
 
-<div class="card-header">
+<div class="card-header col-md-12">
                     <h2 class="card-title" style="display:flex;"> <div style="width:90%;display:flex;align-items: left; justify-content: left;">Mes certifications </div> </h2>
                     </div>
                     <div class="card-body">
                    <div class="table-responsive">
-                    <table class='table table-striped mt-6' style="text-align:center;">
+                    <table class='table table-striped mt-5' style="text-align:center;">
                 <thead>
                     <tr>
                         <th></th>
