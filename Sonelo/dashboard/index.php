@@ -106,7 +106,7 @@
 
   <div class="wrapper">
   <!-- Sidebar -->
-  <nav id="sidebar" class="d-md-block bg-secondary text-dark p-3">
+  <nav id="sidebar" class="d-md-block bg-secondary text-dark p-1">
  
     <div class="accordion" id="accordionExample">
 
@@ -239,7 +239,7 @@
 <img src="image/image_societe.png" width="200" height="100" alt="logo"/>
   </div>
 
-  <div class="col-lg-4 ms-auto">
+  <div class="col-lg-4 offset-md-3">
 <a href="#"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
   </div>
 
