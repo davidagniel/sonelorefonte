@@ -37,7 +37,7 @@
     </div>
 </div>
 </div>
-
+<div class="row">
 <div class="card p-2 d-flex flex-rows">
                         <div style="width: 25%;display:flex;">
                             <div style="
@@ -96,7 +96,9 @@
                     <div style="width:70%;display:flex;align-items: center; justify-content: center; font-weight: bold;"> Echéance dépassée</div>
                         </div>
                     </div>
+</div>
 
+                    <div class="row">
 <div class="p-2">
   
 <div class="card">
@@ -134,6 +136,7 @@
       </tbody>
     </table>
   </div>
+</div>
 </div>
 </div>
 </div>
