@@ -226,8 +226,11 @@
   <div class="col-lg-4 ms-auto">
 <a href="#"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
   </div>
+  </div>
 
+<div class="row">
 
+<h1 class="text-white">Bienvenue sur votre plateforme de suivi de certification</h1>
   </div>
   </div>
 
