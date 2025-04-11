@@ -1,5 +1,6 @@
+  <div class="wrapper">
   <div class="row">
-  <div class="card col-md-5">
+  <div class="card">
 
     <div class="card-header">
       <h2 class="card-title d-flex justify-content-start">Mes certifications</h2>
@@ -35,5 +36,6 @@
         </table>
       </div>
     </div>
+</div>
 </div>
 </div>
