@@ -81,7 +81,9 @@
     <a href="#">
       <img src="image/image_profil.png" width="50" height="50" alt="profil">
     </a>
-  
+    <span>
+  Bienvenue David
+  </span>
 </div>
 </div>
     </div>
