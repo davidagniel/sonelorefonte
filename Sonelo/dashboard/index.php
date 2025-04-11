@@ -230,7 +230,7 @@
 
 <div class="row">
 
-<h1 class="text-white">Bienvenue sur votre plateforme de suivi de certification</h1>
+<h1 class="text-white text-center">Bienvenue sur votre plateforme de suivi de certification</h1>
   </div>
   </div>
 
