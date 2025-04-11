@@ -1,4 +1,4 @@
-  <div class="p-2">
+
   <div class="card">
 
     <div class="card-header">
@@ -36,7 +36,7 @@
       </div>
     </div>
 </div>
-</div>
+
 <div class="row">
 <div class="card p-2 d-flex flex-row">
                         <div style="width: 25%;display:flex;">
@@ -99,9 +99,9 @@
 </div>
 
                     <div class="row">
-<div class="p-2">
+
   
-<div class="card">
+<div class="card p-2">
 
 <div class="card-header">
   <h2 class="card-title d-flex justify-content-start">Mes attestations</h2>
@@ -136,7 +136,6 @@
       </tbody>
     </table>
   </div>
-</div>
 </div>
 </div>
 </div>
