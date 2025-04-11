@@ -233,7 +233,7 @@
   </div>
 
   <?php
-  include('acceuil.php');
+  include('accueil.php');
   ?>
 
 
