@@ -62,7 +62,7 @@
 <nav class="navbar navbar-secondary bg-secondary d-md-none">
     <div class="container-fluid">
       
-      <button class="btn btn-outline-light" id="toggleSidebar">
+      <button class="btn btn-light" id="toggleSidebar">
         ☰
       </button>
   
