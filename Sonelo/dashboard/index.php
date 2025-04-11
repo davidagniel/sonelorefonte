@@ -220,11 +220,11 @@
   </div>
 
   <div class="col-lg-4">
-<img src="image/photo_societe.png" width="200" height="100" alt="logo"/>
+<img src="image/image_societe.png" width="200" height="100" alt="logo"/>
   </div>
 
   <div class="col-lg-4 ms-auto">
-<a href="#"><img src="image/photo_profil.png" width="50" height="50" alt="logo"/></a>
+<a href="#"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
   </div>
 
 
