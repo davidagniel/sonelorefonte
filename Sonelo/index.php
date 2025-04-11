@@ -71,7 +71,7 @@
 
 <body>
     <div class="form-container mt-5">
-        <img src="image/PNG/Logo-PNG.png" alt="Logo" >
+        <img src="dashboard/image/PNG/Logo-PNG.png" alt="Logo" >
         <h2>Connexion</h2>
         <form id="loginForm">
             <div class="mb-3">
