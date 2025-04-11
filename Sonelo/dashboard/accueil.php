@@ -36,3 +36,12 @@
       </div>
     </div>
 </div>
+
+<style>
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 768px
+    }
+}
+    </style>
