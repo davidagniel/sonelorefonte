@@ -212,13 +212,17 @@
 
   <!-- Main content -->
   <main class="flex-grow-1 p-4">
-<div id="GS">
+<div class="d-md-none bg-secondary">
 
 
     <h1>Bienvenue</h1>
     <p>Ceci est le contenu principal de la page.</p>
     <button id="testBtn" class="btn btn-primary">Clique-moi</button>
   </div>
+
+
+
+  
   </main>
 </div>
 
