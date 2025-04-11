@@ -38,7 +38,7 @@
 </div>
 </div>
 
-<div class="card p-2">
+<div class="card p-2 d-flex flex-rows">
                         <div style="width: 25%;display:flex;">
                             <div style="
                             display:flex;align-items: center; justify-content: center;
