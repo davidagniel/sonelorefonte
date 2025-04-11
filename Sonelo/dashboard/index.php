@@ -52,6 +52,10 @@
         padding: 1rem;
       }
 
+      .card {
+    width: 100% !important;
+    overflow-x: auto;
+  }
       .card-title {
                 font-size: 1.2rem;
             }
