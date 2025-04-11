@@ -227,6 +227,7 @@
 
   <!-- Main content -->
   <main class="flex-grow-1 p-4">
+  <div class="container-fluid">
 <div class="d-none d-lg-block bg-secondary ">
 <div class="row align-items-center">
 
@@ -241,6 +242,7 @@
   <div class="col-lg-4 ms-auto">
 <a href="#"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
   </div>
+
   </div>
 
 <div class="row">
@@ -253,7 +255,7 @@
   include('accueil.php');
   ?>
 
-
+  </div>
   </main>
 </div>
 
