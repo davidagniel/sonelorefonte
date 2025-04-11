@@ -1,4 +1,4 @@
-  <div class="card w-100">
+  <div class="card w-70">
 
     <div class="card-header">
       <h2 class="card-title d-flex justify-content-start">Mes certifications</h2>
