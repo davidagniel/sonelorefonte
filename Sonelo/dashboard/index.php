@@ -36,10 +36,10 @@
     /* Mobile styles */
     @media (max-width: 768px) {
       #sidebar {
-        
+        position: fixed;
         top: 56px; /* height of navbar */
         left: -250px;
-        height: 1000px;
+        height: 100%;
         z-index: 1030;
         transition: left 0.3s ease;
       }
@@ -53,7 +53,7 @@
       }
 
       .card {
-    width: 300 !important;
+    width: 100% !important;
     overflow-x: auto;
     position:fixed;
   }
