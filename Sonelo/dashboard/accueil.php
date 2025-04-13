@@ -1,5 +1,5 @@
 
-  <div class="card p-2">
+  <div class="card p-4">
 
     <div class="card-header">
       <h2 class="card-title d-flex justify-content-start">Mes certifications</h2>
@@ -38,7 +38,7 @@
 
 
 <div class="row">
-<div class="card p-2 d-flex flex-row">
+<div class="card p-4 d-flex flex-row">
                         <div style="width: 25%;display:flex;">
                             <div style="
                             display:flex;align-items: center; justify-content: center;
@@ -102,7 +102,7 @@
 <div class="row">
 
   
-<div class="card p-2">
+<div class="card p-4">
 
 <div class="card-header">
   <h2 class="card-title d-flex justify-content-start">Mes attestations</h2>
