@@ -37,6 +37,7 @@
       </div>
     </div>
 </div>
+</div>
 
 <div class="row">
 <div class="card p-4 d-flex flex-row">
