@@ -54,7 +54,7 @@
 
       .card {
     width: 62% !important;
-    overflow-x: auto;
+   
    
   }
   .card-body{
