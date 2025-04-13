@@ -227,7 +227,7 @@
   </nav>
 
   <!-- Main content -->
-  <main class="flex-grow-1 p-2">
+  <main class="flex-grow-1 p-4">
   <div class="container-fluid">
 <div class="d-none d-lg-block bg-secondary ">
 <div class="row align-items-center">
