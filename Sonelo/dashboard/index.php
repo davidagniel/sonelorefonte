@@ -57,6 +57,9 @@
     overflow-x: auto;
    
   }
+  .card-body{
+    font-size: 1.2rem;
+  }
       .card-title {
                 font-size: 1.2rem;
             }
