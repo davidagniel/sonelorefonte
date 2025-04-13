@@ -53,7 +53,7 @@
       }
 
       .card {
-    width: 70% !important;
+    width: 50% !important;
     overflow-x: auto;
    
   }
