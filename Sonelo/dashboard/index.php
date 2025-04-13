@@ -55,7 +55,7 @@
       .card {
     width: 100% !important;
     overflow-x: auto;
-    position:fixed;
+   
   }
       .card-title {
                 font-size: 1.2rem;
