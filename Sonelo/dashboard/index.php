@@ -125,7 +125,7 @@
         <div class="accordion-item">
              <h2 class="accordion-header" id="heading">
          
-            <a class="nav-link accordion-button collapsed text-dark btmenu"  href="dashboard.php?page=accueil"><span data-feather="tablet"></span>accueil</a>
+            <a class="nav-link accordion-button collapsed text-dark btmenu"  href="index.php?page=accueil"><span data-feather="tablet"></span>accueil</a>
          
             </h2>
       
