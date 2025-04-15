@@ -240,7 +240,7 @@
   </div>
 
   <div class="col-lg-4">
-    <h2>Bonjour Sonelo</h2>
+    <h3>Bonjour Sonelo</h3>
  <div>   
 <a href="index.php?page=profil" class="ms-auto"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
 <br>
