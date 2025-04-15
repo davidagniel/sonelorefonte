@@ -53,7 +53,7 @@
       }
 
       .card {
-    width: 62% !important;
+    width: 100% !important;
    
    
   }
