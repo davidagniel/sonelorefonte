@@ -9,7 +9,7 @@
     <div class="card-body">
 
        <div class="table-responsive ">
-        <table class="table table-striped text-center">
+        <table class="table table-sm table-striped text-center">
           <thead>
             <tr>
               <th></th>
@@ -114,7 +114,7 @@
 
 <div class="card-body">
   <div class="table-responsive ">
-    <table class="table table-striped text-center">
+    <table class="table table-sm table-striped text-center">
       <thead>
         <tr>
           <th></th>
