@@ -1,6 +1,6 @@
 
   <div class="row">
-    <div class="card p-4">
+    <div class="card p-4 col-md-6 col-lg-12">
 
     <div class="card-header">
       <h2 class="card-title d-flex justify-content-start">Mes certifications</h2>
@@ -8,7 +8,7 @@
 
     <div class="card-body">
 
-       <div class="table-responsive col-md-6 col-lg-12">
+       <div class="table-responsive ">
         <table class="table table-striped text-center">
           <thead>
             <tr>
@@ -106,14 +106,14 @@
 <div class="row">
 
   
-<div class="card p-4">
+<div class="card p-4 col-md-6 col-lg-12">
 
 <div class="card-header">
   <h2 class="card-title d-flex justify-content-start">Mes attestations</h2>
 </div>
 
 <div class="card-body">
-  <div class="table-responsive col-md-6 col-lg-12">
+  <div class="table-responsive ">
     <table class="table table-striped text-center">
       <thead>
         <tr>
