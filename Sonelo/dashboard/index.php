@@ -240,7 +240,10 @@
   </div>
 
   <div class="col-lg-4">
+    bonjour Sonelo
 <a href="index.php?page=profil" class="ms-auto"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
+<br>
+mon profil
   </div>
 
   </div>
