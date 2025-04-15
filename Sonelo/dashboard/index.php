@@ -239,7 +239,7 @@
 <img src="image/image_societe.png" width="200" height="100" alt="logo"/>
   </div>
 
-  <div class="col-lg-4">
+  <div class="col-lg-4 d-flex flex-row">
     <h4>Bonjour Sonelo</h4>
  <div>   
 <a href="index.php?page=profil" class="ms-auto"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
