@@ -99,11 +99,15 @@
 
   <!-- Deuxième span à droite -->
   <div class="col justify-content-end">
-  <div>
+  <span style="  font-size: 0.8rem;">    bonjour<br> Sonelo </span>
+  </div>
+  <div class="col justify-content-end">
     <a href="#">
       <img src="image/image_profil.png" width="50" height="50" alt="profil">
     </a>
-  </div>
+    <br>
+<span style="  font-size: 0.8rem;">    mon profil<span>
+  
 </div>
 </div>
     </div>
