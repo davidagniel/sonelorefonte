@@ -10,7 +10,7 @@
                             <div>photo de profil</div>
                             <div><img src="<?=$result['photo'] != null || $result['photo'] != '' ? $result['photo'] : "image/image_profil.png" ?>" width="50" height="50"></div>
                              <div>photo de la societe</div>
-                            <div><img src="<?=$result['photo_societe'] != null || $result['photo_societe'] != '' ? $result['photo_societe'] : "image/image_societe.png" ?>" width="200" height="100"></div>
+                            <div class='mini-img'><img src="<?=$result['photo_societe'] != null || $result['photo_societe'] != '' ? $result['photo_societe'] : "image/image_societe.png" ?>" width="200" height="100"></div>
                             
                         </div>
                             

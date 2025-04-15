@@ -72,6 +72,11 @@
                 width: 30px;
                 height: 30px;
             }
+
+            .mini-img{
+              width: 100px;
+              height:50px;
+            }
   
     }
    .btmenu{
