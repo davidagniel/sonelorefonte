@@ -250,7 +250,7 @@
   </div>
 
   <div class="col-lg-4">
-<a href="#" class="ms-auto"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
+<a href="index.php?page=profil" class="ms-auto"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
   </div>
 
   </div>

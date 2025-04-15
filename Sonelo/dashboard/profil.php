@@ -1,5 +1,5 @@
 <div class="row">
-<div class="card">
+<div class="card p-4">
                     <div class="card-header">
                     <h2 class="card-title justify-content-start d-flex"> Profil Utilisateur  </h2>    </div>
                     
