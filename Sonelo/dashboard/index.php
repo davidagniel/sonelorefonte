@@ -98,7 +98,7 @@
   </div>
 
   <!-- Deuxième span à droite -->
-  <div class="col d-flex justify-content-end">
+  <div class="col justify-content-end">
   <div>
     <a href="#">
       <img src="image/image_profil.png" width="50" height="50" alt="profil">
