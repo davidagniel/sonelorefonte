@@ -101,13 +101,14 @@
   <div class="col justify-content-end">
   <span style="  font-size: 0.8rem;">    bonjour<br> Sonelo </span>
   </div>
-  <div class="col justify-content-end">
+  <div class="col">
+    <div style ="width:100px;" class="justify-content-end">
     <a href="#">
       <img src="image/image_profil.png" width="50" height="50" alt="profil">
     </a>
     <br>
 <span style="  font-size: 0.8rem;">    mon profil<span>
-  
+  </div>
 </div>
 </div>
     </div>
