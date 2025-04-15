@@ -241,8 +241,8 @@
 
   <div class="col-lg-4 d-flex flex-row">
     <h4>Bonjour Sonelo</h4>
- <div>   
-<a href="index.php?page=profil" class="ms-auto"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
+ <div class="p-4">   
+<a  href="index.php?page=profil" class="ms-auto"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
 <br>
 mon profil
   </div>
