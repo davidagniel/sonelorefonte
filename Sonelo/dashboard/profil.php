@@ -1,6 +1,7 @@
+<div class="row">
 <div class="card">
                     <div class="card-header">
-                    <h3 class="card-title" style="display:flex;"> <div style="display:flex;align-items: center; justify-content: center;">Profil Utilisateur </div> </h3>    </div>
+                    <h2 class="card-title justify-content-start d-flex"> Profil Utilisateur  </h2>    </div>
                     
 <?php if(isset($uploadError)): ?>
             <div class="alert alert-warning">
@@ -83,5 +84,5 @@
                         </div>
                     </div>
                 </div>
-           
+        </div>
      
