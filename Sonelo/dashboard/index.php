@@ -102,7 +102,7 @@
   <span style="  font-size: 0.8rem;">    bonjour<br> Sonelo </span>
   </div>
   <div class="col">
-    <div style ="width:100px;" class="justify-content-end">
+    <div style ="width:200px;" class="justify-content-end">
     <a href="#">
       <img src="image/image_profil.png" width="50" height="50" alt="profil">
     </a>
