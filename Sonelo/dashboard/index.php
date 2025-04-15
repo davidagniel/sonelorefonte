@@ -262,7 +262,11 @@
   </div>
 
   <?php
-  include('accueil.php');
+  if(isset($_GET['page'])){
+    include($_GET['page']'.php');
+
+  }else{
+  include('accueil.php');}
   ?>
 
   </div>
