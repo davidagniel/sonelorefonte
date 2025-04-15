@@ -89,7 +89,7 @@
       </button>
   
       <span class="navbar-brand mb-1 h1 ms-auto"> <img src="image/AlerteCertif-accueil.png" width="150" height="50" alt="logo"/></span>
-      <div class="row align-items-center">
+      <div class="row">
   <!-- Premier span centré -->
   <div class="col-6 text-center">
     <span class="navbar-brand mb-0 h1">
