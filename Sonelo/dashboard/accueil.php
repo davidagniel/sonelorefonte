@@ -8,7 +8,7 @@
 
     <div class="card-body">
 
-       <div class="table-responsive">
+       <div class="table-responsive col-md-6 col-lg-12">
         <table class="table table-striped text-center">
           <thead>
             <tr>
@@ -41,7 +41,7 @@
 </div>
 
 <div class="row">
-<div class="card p-4">
+<div class="card p-4 col-md-6 col-lg-12">
 <div class="card-body  d-flex flex-row">
                         <div style="width: 25%;display:flex;">
                             <div style="
@@ -113,7 +113,7 @@
 </div>
 
 <div class="card-body">
-  <div class="table-responsive">
+  <div class="table-responsive col-md-6 col-lg-12">
     <table class="table table-striped text-center">
       <thead>
         <tr>
