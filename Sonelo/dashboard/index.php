@@ -136,22 +136,7 @@
       
      
          </div>
- <!-- Profil Section -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                <span data-feather="user"></span> <span style="color:#c90e0e;"> Profil</span>
-                            </button>
-                        </h2>
-                        
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body" style="background-color:#c90e0e;color:white;">
-                                <ul class="list-unstyled">
-                                    <li><a class="nav-link active" href="<?=$_SESSION['url']?>modif_profil&style=c90e0e">Modifier Profil</a></li>
-                                  </ul>
-                            </div>
-                        </div>
-                    </div>
+
                     <!-- Certification Section -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
