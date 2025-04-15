@@ -103,7 +103,7 @@
   </div>
   <div class="col">
     <div style ="width:100px;" class="justify-content-end">
-    <a href="#">
+    <a href="index.php?page=profil">
       <img src="image/image_profil.png" width="50" height="50" alt="profil">
     </a>
     <br>
