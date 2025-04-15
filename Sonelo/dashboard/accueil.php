@@ -7,8 +7,9 @@
     </div>
 
     <div class="card-body">
-      <div class="table-responsive">
-        <table class="table table-striped md-6 text-center">
+
+      <!-- <div class="table-responsive">
+        <table class="table table-striped text-center">
           <thead>
             <tr>
               <th></th>
@@ -37,7 +38,7 @@
       </div>
     </div>
 </div>
-</div>
+</div> -->
 
 <div class="row">
 <div class="card p-4">
