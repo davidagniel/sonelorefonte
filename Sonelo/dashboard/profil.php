@@ -3,16 +3,6 @@
                     <div class="card-header">
                     <h2 class="card-title justify-content-start d-flex"> Profil Utilisateur  </h2>    </div>
                     
-<?php if(isset($uploadError)): ?>
-            <div class="alert alert-warning">
-                <?php echo $uploadError; ?>
-            </div>
-        <?php endif; ?>
-        <?php if(isset($uploaded)): ?>
-            <div class="alert alert-success">
-                <?php echo $uploaded."<br/>".$uploaded; ?>
-            </div>
-        <?php endif; ?>
                     <div class="card-body">
                     <div class="row">
                         <div class="col-4">
