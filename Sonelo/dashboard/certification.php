@@ -153,7 +153,7 @@ if($_GET['id_certif']==''){?>
 <tr>
               <td>Type</td><td colspan=2>initiale</td>
 </tr>
-<tr>
+<tr style="height:48.4px;">
               <td>Date d'obtention</td> <td>10/10/2020</td> <td></td>
 </tr>
 <tr>
@@ -168,8 +168,8 @@ if($_GET['id_certif']==''){?>
                          <td colspan=3><a href="#" class="text-dark"><span data-feather="layers"></span></a></td>
           
         </tr>
-<tr>
-    <td colspan=3 style="height:48.4px;">
+<tr style="height:48.4px;">
+    <td colspan=3 >
        
     </td>
 </tr>
