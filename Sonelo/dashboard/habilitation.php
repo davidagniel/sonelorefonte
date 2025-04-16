@@ -1,25 +1,76 @@
 <div class="row">
-<div class="d-flex flex-row">
+<div class="d-none d-lg-block d-flex flex-row">
+    <div class="row">
+<div class="col-lg-3">
 <select>
-    <option value="">Habilitation</option>
-    <option value="">Audit</option>
-    <option value="">Electricité</option>
+    <option value="">habilitation</option>
+    <option value="">electricite</option>
+    <option value="">audit</option>
+
 
 </select>
-
+</div>
+<div class="col-lg-3">
 <select>
 <option>Initiale</option>
 
 <option>Renouvellement</option>
 </select>
-
+</div>
+<div class="col-lg-3">
 <input type="date">
 </div>
-<div class=" col-12 d flex align-items-center">
+
+<div class=" col-lg-3">
 
 <button class="btn btn-primary">rechercher</button>
 </div>
 </div>
+</div>
+
+
+
+
+<!-- md-blok-->
+<div class="d-md-none d-flex flex-row">
+    <div class="row">
+<div class="col-sm-6">
+<select>
+    <option value="">habilitation</option>
+    <option value="">electricite</option>
+    <option value="">audit</option>
+
+
+</select>
+</div>
+<div class="col-sm-6">
+<select>
+<option>Initiale</option>
+
+<option>Renouvellement</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+    
+
+<input type="date" value="<?= date("Y-m-d")?>">
+</div>
+
+<div class=" col-sm-6 p-2">
+
+<button class="btn btn-primary">rechercher</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+
+
 
 <div class="row">
     <div class="col-lg-6">
