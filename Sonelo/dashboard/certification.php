@@ -36,7 +36,7 @@
             
         </tr>
 <tr>
-    <td colspan=3 class="d-flex flex-column">
+    <td colspan=3 >
         <button class="btn btn-danger">supprimer</button>
     </td>
 </tr>
@@ -83,7 +83,7 @@
           
         </tr>
 <tr>
-    <td colspan=3 class="d-flex flex-column">
+    <td colspan=3 >
         <button class="btn btn-danger">supprimer</button>
     </td>
 </tr>
