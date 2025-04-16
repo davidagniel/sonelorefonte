@@ -208,6 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const td = btn.closest("tr").querySelector(".obligation");
       td.classList.remove("bg-danger","bg-orange");
       td.classList.add("bg-primary", "text-white");
+      btn.style.display = "none";
 
     });
   });
