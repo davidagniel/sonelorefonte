@@ -80,7 +80,7 @@
             </tr>
           <tr>
                          <td colspan=3><a href="#" class="text-dark"><span data-feather="layers"></span></a></td>
-            </td>
+          
         </tr>
 <tr>
     <td colspan=3 class="d-flex flex-column">
