@@ -50,6 +50,7 @@
 <option>Renouvellement</option>
 </select>
 </div>
+</div>
 <div class="row">
 <div class="col-sm-6">
 <input type="date">
@@ -60,6 +61,7 @@
 <button class="btn btn-primary">rechercher</button>
 </div>
 </div>
+
 </div>
 
 </div>
