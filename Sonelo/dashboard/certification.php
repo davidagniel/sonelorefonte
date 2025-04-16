@@ -157,7 +157,7 @@ if($_GET['id_certif']==''){?>
               <td>Date d'obtention</td> <td>10/10/2020</td> <td></td>
 </tr>
 <tr>
-              <td>Obligation de formation</td> <td class="obligation" >10/10/2024</td>  <td><button class="btn btn-success">ok</button></td>
+              <td>Obligation de formation</td> <td class=" bg-danger text-white obligation" >10/10/2024</td>  <td><button class="btn btn-success">ok</button></td>
 </tr>
 <tr>
               <td>Fin de cycle</td>               <td colspan=2>09/10/2027</td>
