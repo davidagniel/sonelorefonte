@@ -68,7 +68,7 @@
               <td>Type</td><td colspan=2>initiale</td>
 </tr>
 <tr>
-              <td>Date d'obtention</td> <td>10/10/2020</td> <td><button class="btn btn-dark">modifier</button></td>
+              <td>Date d'obtention</td> <td>10/10/2020</td> <td></td>
 </tr>
 <tr>
               <td>Obligation de formation</td> <td class="text-white bg-danger" >10/10/2024</td>  <td></td>
@@ -84,7 +84,7 @@
         </tr>
 <tr>
     <td colspan=3 >
-        <button class="btn btn-danger">supprimer</button>
+       
     </td>
 </tr>
 
