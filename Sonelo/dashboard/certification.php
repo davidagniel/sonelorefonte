@@ -208,6 +208,10 @@ document.addEventListener("DOMContentLoaded", function () {
       td.classList.remove("bg-danger","bg-orange");
       td.classList.add("bg-primary", "text-white");
       btn.style.display = "none";
+      const lien = td.querySelector("a");
+    if (lien) {
+      lien.style.display = "none";
+    }
     });
   });
 });
