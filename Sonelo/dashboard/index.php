@@ -64,6 +64,10 @@
    
   }
 
+  .textsize{
+    font-size: 0.5rem;
+  }
+
   .card-body{
     font-size: 0.8rem;
     padding: 0.5rem;
