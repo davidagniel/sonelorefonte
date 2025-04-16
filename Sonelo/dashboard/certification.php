@@ -1,4 +1,24 @@
 <div class="row">
+<div class="d-flex flex-row">
+<select>
+    <option value="">Certification</option>
+    <option value="">DPE</option>
+    <option value="">Amiante</option>
+    <option value="">Plomb</option>
+
+</select>
+<select>
+<option>Initiale</option>
+
+<option>Renouvellement</option>
+</select>
+
+<input type="date">
+<button class="btn btn-primary">rechercher</button>
+</div>
+
+
+<div class="row">
     <div class="col-lg-6">
     <div class="card p-4 ">
 
