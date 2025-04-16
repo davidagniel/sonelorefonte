@@ -1,5 +1,6 @@
 <div class="row">
-<div class="d-flex flex-row">
+<div class="d-none d-lg-block">
+<div class="col-lg-3">
 <select>
     <option value="">Certification</option>
     <option value="">DPE</option>
@@ -7,21 +8,24 @@
     <option value="">Plomb</option>
 
 </select>
-
+</div>
+<div class="col-lg-3">
 <select>
 <option>Initiale</option>
 
 <option>Renouvellement</option>
 </select>
-
+</div>
+<div class="col-lg-3">
 <input type="date">
 </div>
-<div class=" col-12 d-flex align-items-center">
+
+<div class=" col-lg-3">
 
 <button class="btn btn-primary">rechercher</button>
 </div>
 </div>
-
+</div>
 <div class="row">
     <div class="col-lg-6">
     <div class="card p-4 ">
