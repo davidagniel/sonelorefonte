@@ -31,7 +31,7 @@
               <td class="text-white" style="background-color:#fd7e14;">10/10/2025</td>
               <td><a href="#" class="text-dark"><span data-feather="search"></span></a></td>
               <td>09/10/2028</td>
-              <td><a href="#" class="text-dark"><span data-feather="layers"></span></a></td>
+              <td><a href="index.php?page=certification&id_certif=1" class="text-dark"><span data-feather="layers"></span></a></td>
             </tr>
           </tbody>
         </table>
@@ -136,7 +136,7 @@
           <td class="text-white" style="background-color:#fd7e14;">10/10/2025</td>
           <td><a href="#" class="text-dark"><span data-feather="search"></span></a></td>
           <td>09/10/2028</td>
-          <td><a href="#" class="text-dark"><span data-feather="layers"></span></a></td>
+          <td><a href="index.php?page=habilitation&id_habili=1" class="text-dark"><span data-feather="layers"></span></a></td>
         </tr>
       </tbody>
     </table>

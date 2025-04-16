@@ -123,7 +123,7 @@
 
 <?php
 
-if($_GET['id_certif']==''){?>
+if($_GET['id_habili']==''){?>
 <div class="col-lg-6">
     <div class="card p-4 ">
 
