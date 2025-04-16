@@ -27,7 +27,47 @@
 </div>
 </div>
 </div>
+
+
+
+
+<!-- md-blok-->
+<div class="d-none d-md-block d-flex flex-row">
+    <div class="row">
+<div class="col-md-6">
+<select>
+    <option value="">Certification</option>
+    <option value="">DPE</option>
+    <option value="">Amiante</option>
+    <option value="">Plomb</option>
+
+</select>
 </div>
+<div class="col-md-6">
+<select>
+<option>Initiale</option>
+
+<option>Renouvellement</option>
+</select>
+</div>
+<div class="row">
+<div class="col-md-6">
+<input type="date">
+</div>
+
+<div class=" col-md-6">
+
+<button class="btn btn-primary">rechercher</button>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
 
 <div class="row">
     <div class="col-lg-6">
