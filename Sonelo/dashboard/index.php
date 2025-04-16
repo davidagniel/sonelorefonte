@@ -77,6 +77,11 @@
               width: 100px;
               height:50px;
             }
+
+            .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
   
     }
    .btmenu{
