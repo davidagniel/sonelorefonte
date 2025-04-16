@@ -16,7 +16,7 @@
 
 <input type="date">
 </div>
-<div class="align-items-center">
+<div class=" col-12 d-flex align-items-center">
 
 <button class="btn btn-primary">rechercher</button>
 </div>
