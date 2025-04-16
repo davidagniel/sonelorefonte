@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (parts.length === 3) {
         defaultDate = `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`;
       }
-      td.classList.remove("bg-orange");
+    
       td.innerHTML = `<input type="date" class="form-control" value="${defaultDate}">`;
     });
   });
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".btn-ok").forEach(function (btn) {
     btn.addEventListener("click", function () {
       const td = btn.closest("tr").querySelector(".obligation");
-      td.classList.remove("bg-danger");
+      td.classList.remove("bg-danger","bg-orange");
       td.classList.add("bg-primary", "text-white");
 
     });
