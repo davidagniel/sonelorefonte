@@ -73,7 +73,15 @@
 
 
 <div class="row">
+<?php
+
+if($_GET['id_habili']==''){?>
     <div class="col-lg-6">
+        <?php } else{
+            ?>
+ <div class="col-lg-12">
+
+       <?php  } ?>
     <div class="card p-4 ">
 
     <div class="card-header">
