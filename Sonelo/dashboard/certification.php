@@ -169,7 +169,7 @@ if($_GET['id_certif']==''){?>
           
         </tr>
 <tr>
-    <td colspan=3 >
+    <td colspan=3 style="height:46.4px;">
        
     </td>
 </tr>
