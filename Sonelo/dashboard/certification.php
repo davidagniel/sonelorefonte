@@ -56,7 +56,7 @@
 <input type="date">
 </div>
 
-<div class=" col-sm-6">
+<div class=" col-sm-6 p-2">
 
 <button class="btn btn-primary">rechercher</button>
 </div>
