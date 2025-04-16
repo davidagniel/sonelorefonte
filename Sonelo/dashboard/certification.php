@@ -34,7 +34,7 @@
 <!-- md-blok-->
 <div class="d-md-none d-flex flex-row">
     <div class="row">
-<div class="col-md-6">
+<div class="col-sm-6">
 <select>
     <option value="">Certification</option>
     <option value="">DPE</option>
@@ -43,7 +43,7 @@
 
 </select>
 </div>
-<div class="col-md-6">
+<div class="col-sm-6">
 <select>
 <option>Initiale</option>
 
@@ -51,11 +51,11 @@
 </select>
 </div>
 <div class="row">
-<div class="col-md-6">
+<div class="col-sm-6">
 <input type="date">
 </div>
 
-<div class=" col-md-6">
+<div class=" col-sm-6">
 
 <button class="btn btn-primary">rechercher</button>
 </div>
