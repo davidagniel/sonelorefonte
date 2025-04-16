@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (parts.length === 3) {
         defaultDate = `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`;
       }
-      td.classList.remove("bg-orange","text-white");
+      td.classList.remove("bg-orange");
       td.innerHTML = `<input type="date" class="form-control" value="${defaultDate}">`;
     });
   });
