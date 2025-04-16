@@ -7,14 +7,17 @@
     <option value="">Plomb</option>
 
 </select>
+
 <select>
 <option>Initiale</option>
 
 <option>Renouvellement</option>
 </select>
+
+<input type="date">
 </div>
 <div class="align-item-center">
-<input type="date">
+
 <button class="btn btn-primary">rechercher</button>
 </div>
 </div>
