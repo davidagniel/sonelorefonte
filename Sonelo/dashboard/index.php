@@ -58,7 +58,7 @@
    
   }
 
-  #accueil{
+  .accueil{
     width: 60% !important;
     overflow-x: auto;
    
