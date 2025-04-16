@@ -54,7 +54,7 @@
 
       .card {
     width: 100% !important;
-   
+    overflow-x: auto;
    
   }
   .card-body{
@@ -83,6 +83,15 @@
     padding-right: 0;
   }
   
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table {
+    width: 100%;
+    min-width: 600px; /* ou la largeur minimum nécessaire à ton contenu */
+  }
     }
    .btmenu{
     background-color:#D9D9D9;
