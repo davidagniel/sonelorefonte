@@ -90,7 +90,7 @@
 
   .table {
     width: 100%;
-    min-width: 400px;
+    
     max-width: 700px; /* ou la largeur minimum nécessaire à ton contenu */
   }
     }
