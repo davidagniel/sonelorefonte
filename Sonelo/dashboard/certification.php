@@ -32,7 +32,7 @@
 
 
 <!-- md-blok-->
-<div class="d-none d-md-block d-flex flex-row">
+<div class="d-md-none d-flex flex-row">
     <div class="row">
 <div class="col-md-6">
 <select>
