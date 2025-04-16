@@ -53,7 +53,7 @@
 </div>
 <div class="row">
 <div class="col-sm-6">
-<input type="date">
+<input type="date" value="0000-00-00">
 </div>
 
 <div class=" col-sm-6 p-2">
