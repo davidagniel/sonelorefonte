@@ -65,7 +65,7 @@
   }
 
   .textsize{
-    font-size: 0.5rem;
+    font-size: 7px;
   }
 
   .card-body{
