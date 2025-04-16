@@ -8,12 +8,12 @@
         <div class="mb-3">
             <label for="certification" class="form-label">Certification/Habilitation</label>
             <select class="form-select" id="certification" name="certification" required>
-            <option value="">Certification</option>
+           
     <option value="">DPE</option>
     <option value="">Amiante</option>
     <option value="">Plomb</option>
     <option><hr></option>
-    <option value="">habilitation</option>
+   
     <option value="">electricite</option>
     <option value="">audit</option>
 
