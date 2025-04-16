@@ -12,11 +12,12 @@
 
 <option>Renouvellement</option>
 </select>
-
+</div>
+<div class="align-item-center">
 <input type="date">
 <button class="btn btn-primary">rechercher</button>
 </div>
-
+</div>
 
 <div class="row">
     <div class="col-lg-6">
