@@ -107,7 +107,7 @@ if($_GET['id_certif']==''){?>
               <td>Date d'obtention</td> <td class="date-obtention" >10/10/2021</td> <td><button class="btn btn-dark btn-modifier">modifier</button></td>
 </tr>
 <tr>
-              <td>Obligation de formation</td> <td   class="obligation" >10/10/2025</td>  <td><a href="#" class="text-dark"><span data-feather="search"></span></a><button class="btn btn-success btn-ok">ok</button></td>
+              <td>Obligation de formation</td> <td   class="obligation bg-orange text-white" >10/10/2025</td>  <td><a href="#" class="text-dark"><span data-feather="search"></span></a><button class="btn btn-success btn-ok">ok</button></td>
 </tr>
 <tr>
               <td>Fin de cycle</td>               <td colspan=2>09/10/2028</td>
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (parts.length === 3) {
         defaultDate = `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`;
       }
-
+      td.classList.remove("bg-orange","text-white");
       td.innerHTML = `<input type="date" class="form-control" value="${defaultDate}">`;
     });
   });

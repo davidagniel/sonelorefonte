@@ -11,7 +11,9 @@
       margin: 0;
      background-color: #f0f0f0;
     }
-
+.bg-orange{
+  background-color: #fd7e14 !important;
+}
     .wrapper {
       display: flex;
       min-height: 100vh;
