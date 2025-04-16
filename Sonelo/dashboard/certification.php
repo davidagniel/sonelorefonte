@@ -53,7 +53,9 @@
 </div>
 <div class="row">
 <div class="col-sm-6">
-<input type="date" value="1970-01-01">
+    
+
+<input type="date" value="<?= date("Y-m-d")?>">
 </div>
 
 <div class=" col-sm-6 p-2">
