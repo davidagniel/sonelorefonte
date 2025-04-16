@@ -1,5 +1,5 @@
 <div class="row">
-<div class="d-none d-lg-block">
+<div class="d-none d-lg-block d-flex flex-row">
 <div class="col-lg-3">
 <select>
     <option value="">Certification</option>
