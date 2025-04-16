@@ -57,6 +57,13 @@
     overflow-x: auto;
    
   }
+
+  #accueil{
+    width: 60% !important;
+    overflow-x: auto;
+   
+  }
+
   .card-body{
     font-size: 0.8rem;
     padding: 0.5rem;
