@@ -25,7 +25,7 @@
             <input type="radio"  id="type1" name="type" class="type" <?=$_GET['type']=='Initiale'? "checked value='Initiale'":'checked' ?> <?= $_GET['type']=='Renouvellement' && $_GET['idcertif']=='Audit Energitique'? "checked value='Initiale'":'checked' ?>> Initiale
             <input type="radio"  id="type2" name="type" class="type" <?=$_GET['type']=='Renouvellement' && $_GET['idcertif']!='Audit Energitique'? "checked value='Renouvellement'":'' ?> > Renouvellement
         </div>
-        <div class="mb-3" id="dateob" style="display:none;">
+        <div class="mb-3" id="dateob" >
             <label for="dateObtention" class="form-label">Date d'obtention</label>
             <input type="date" class="form-control" id="dateObtention" name="dateObtention" required>
         </div>
