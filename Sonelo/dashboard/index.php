@@ -173,7 +173,8 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body" style="background-color:#6ce364;color:white;">
                                 <ul class="list-unstyled">
-                                <li><a class="nav-link active" href="index.php?page=certification">Voir mes Certifications<br>Habilitations</a></li>
+                                <li><a class="nav-link active" href="index.php?page=certification">Voir mes Certifications</a></li>
+                                <li><a class="nav-link active" href="index.php?page=habilitation">Voir mes Habilitations</a></li>
                                  
                                 <li><a class="nav-link active" href="<?=$_SESSION['url']?>ajout_certif&style=6ce364">Ajouter Certification<br>habilitation</a></li>
                                  </ul>

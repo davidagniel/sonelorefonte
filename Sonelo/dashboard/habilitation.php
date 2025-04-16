@@ -1,0 +1,119 @@
+<div class="row">
+<div class="d-flex flex-row">
+<select>
+    <option value="">Habilitation</option>
+    <option value="">Audit</option>
+    <option value="">Electricité</option>
+
+</select>
+
+<select>
+<option>Initiale</option>
+
+<option>Renouvellement</option>
+</select>
+
+<input type="date">
+</div>
+<div class="align-item-center">
+
+<button class="btn btn-primary">rechercher</button>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+    <div class="card p-4 ">
+
+    <div class="card-header">
+      <h2 class="card-title d-flex justify-content-start">Mes habilitations</h2>
+    </div>
+
+    <div class="card-body">
+
+       <div class="table-responsive ">
+        <table class="table table-sm table-striped text-center">
+          
+            <tr>
+              <td colspan=3><img src="image/audit.svg" width="50" height="50" alt="audit"></td>
+            </tr>
+<tr>
+              <td>habilitation</td><td colspan=2>audit</td>
+</tr>
+<tr>
+              <td>Type</td><td colspan=2>initiale</td>
+</tr>
+<tr>
+              <td>Date d'obtention</td> <td>10/10/2021</td> <td><button class="btn btn-dark">modifier</button></td>
+</tr>
+<tr>
+              <td>Obligation de formation</td> <td class="text-white" style="background-color:#fd7e14;">10/10/2025</td>  <td><a href="#" class="text-dark"><span data-feather="search"></span></a><button class="btn btn-success">ok</button></td>
+</tr>
+<tr>
+              <td>Fin de cycle</td>               <td colspan=2>09/10/2028</td>
+
+              
+            </tr>
+          <tr>
+                         <td colspan=3><a href="#" class="text-dark"><span data-feather="layers"></span></a></td>
+            
+        </tr>
+<tr>
+    <td colspan=3 >
+        <button class="btn btn-danger">supprimer</button>
+    </td>
+</tr>
+
+        </table>
+      </div>
+    </div> 
+</div>
+</div>
+<div class="col-lg-6">
+    <div class="card p-4 ">
+
+    <div class="card-header">
+      <h2 class="card-title d-flex justify-content-start">Mes habilitations</h2>
+    </div>
+
+    <div class="card-body">
+
+       <div class="table-responsive ">
+       <table class="table table-sm table-striped text-center">
+          
+          <tr>
+            <td colspan=3><img src="image/audit.svg" width="50" height="50" alt="audit"></td>
+          </tr>
+<tr>
+            <td>habilitation</td><td colspan=2>audit</td>
+</tr>
+<tr>
+              <td>Type</td><td colspan=2>initiale</td>
+</tr>
+<tr>
+              <td>Date d'obtention</td> <td>10/10/2020</td> <td></td>
+</tr>
+<tr>
+              <td>Obligation de formation</td> <td class="text-white bg-danger" >10/10/2024</td>  <td></td>
+</tr>
+<tr>
+              <td>Fin de cycle</td>               <td colspan=2>09/10/2027</td>
+
+              
+            </tr>
+          <tr>
+                         <td colspan=3><a href="#" class="text-dark"><span data-feather="layers"></span></a></td>
+          
+        </tr>
+<tr>
+    <td colspan=3 >
+       
+    </td>
+</tr>
+
+        </table>
+      </div>
+    </div> 
+</div>
+</div>
+</div>
