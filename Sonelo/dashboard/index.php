@@ -90,7 +90,8 @@
 
   .table {
     width: 100%;
-    min-width: 600px; /* ou la largeur minimum nécessaire à ton contenu */
+    min-width: 400px;
+    max-width: 700px; /* ou la largeur minimum nécessaire à ton contenu */
   }
     }
    .btmenu{
