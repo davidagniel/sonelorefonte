@@ -169,7 +169,7 @@ if($_GET['id_habili']==''){?>
           
         </tr>
 <tr>
-    <td colspan=3 style="height:47.4px;">
+    <td colspan=3 style="height:48.4px;">
        
     </td>
 </tr>
