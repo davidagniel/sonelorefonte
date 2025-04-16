@@ -1,5 +1,6 @@
 <div class="row">
 <div class="d-none d-lg-block d-flex flex-row">
+    <div class="row">
 <div class="col-lg-3">
 <select>
     <option value="">Certification</option>
@@ -26,6 +27,8 @@
 </div>
 </div>
 </div>
+</div>
+
 <div class="row">
     <div class="col-lg-6">
     <div class="card p-4 ">
