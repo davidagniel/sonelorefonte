@@ -121,6 +121,9 @@
     </div> 
 </div>
 </div>
+<?php
+
+if($_GET['id_certif']==''){?>
 <div class="col-lg-6">
     <div class="card p-4 ">
 
@@ -146,7 +149,7 @@
               <td>Date d'obtention</td> <td>10/10/2020</td> <td></td>
 </tr>
 <tr>
-              <td>Obligation de formation</td> <td class="text-white bg-danger" >10/10/2024</td>  <td></td>
+              <td>Obligation de formation</td> <td class="text-white bg-danger" >10/10/2024</td>  <td><button class="btn btn-success">ok</button></td>
 </tr>
 <tr>
               <td>Fin de cycle</td>               <td colspan=2>09/10/2027</td>
@@ -168,4 +171,5 @@
     </div> 
 </div>
 </div>
+<?php } ?>
 </div>
