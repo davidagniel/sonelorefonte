@@ -59,7 +59,7 @@
   }
 
   .accueil{
-    width: 60% !important;
+    width: 62% !important;
     overflow-x: auto;
    
   }
