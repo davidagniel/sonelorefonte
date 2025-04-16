@@ -104,10 +104,10 @@ if($_GET['id_certif']==''){?>
               <td>Type</td><td colspan=2>initiale</td>
 </tr>
 <tr>
-              <td>Date d'obtention</td> <td>10/10/2021</td> <td><button class="btn btn-dark">modifier</button></td>
+              <td>Date d'obtention</td> <td class="date-obtention" >10/10/2021</td> <td><button class="btn btn-dark btn-modifier">modifier</button></td>
 </tr>
 <tr>
-              <td>Obligation de formation</td> <td class="text-white" style="background-color:#fd7e14;">10/10/2025</td>  <td><a href="#" class="text-dark"><span data-feather="search"></span></a><button class="btn btn-success">ok</button></td>
+              <td>Obligation de formation</td> <td   class="obligation" >10/10/2025</td>  <td><a href="#" class="text-dark"><span data-feather="search"></span></a><button class="btn btn-success btn-ok">ok</button></td>
 </tr>
 <tr>
               <td>Fin de cycle</td>               <td colspan=2>09/10/2028</td>
@@ -157,7 +157,7 @@ if($_GET['id_certif']==''){?>
               <td>Date d'obtention</td> <td>10/10/2020</td> <td></td>
 </tr>
 <tr>
-              <td>Obligation de formation</td> <td class="text-white bg-danger" >10/10/2024</td>  <td><button class="btn btn-success">ok</button></td>
+              <td>Obligation de formation</td> <td class="obligation" >10/10/2024</td>  <td><button class="btn btn-success">ok</button></td>
 </tr>
 <tr>
               <td>Fin de cycle</td>               <td colspan=2>09/10/2027</td>
@@ -181,3 +181,33 @@ if($_GET['id_certif']==''){?>
 </div>
 <?php } ?>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Pour le bouton modifier
+  document.querySelectorAll(".btn-modifier").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const td = btn.closest("tr").querySelector(".date-obtention");
+      const oldText = td.textContent.trim();
+      let defaultDate = "2025-01-01";
+
+      // Essaye de convertir l'ancien texte en date
+      const parts = oldText.split("/");
+      if (parts.length === 3) {
+        defaultDate = `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`;
+      }
+
+      td.innerHTML = `<input type="date" class="form-control" value="${defaultDate}">`;
+    });
+  });
+
+  // Pour le bouton OK
+  document.querySelectorAll(".btn-ok").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const td = btn.closest("tr").querySelector(".obligation");
+      td.classList.remove("bg-danger");
+      td.classList.add("bg-primary", "text-white");
+    });
+  });
+});
+</script>
