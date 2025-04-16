@@ -176,7 +176,7 @@
                                 <li><a class="nav-link active" href="index.php?page=certification">Voir mes Certifications</a></li>
                                 <li><a class="nav-link active" href="index.php?page=habilitation">Voir mes Habilitations</a></li>
                                  
-                                <li><a class="nav-link active" href="<?=$_SESSION['url']?>ajout_certif&style=6ce364">Ajouter Certification<br>habilitation</a></li>
+                                <li><a class="nav-link active" href="index.php?page=ajout_certif">Ajouter Certification<br>habilitation</a></li>
                                  </ul>
                             </div>
                         </div>
