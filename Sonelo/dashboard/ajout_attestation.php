@@ -1,7 +1,8 @@
 <div class="row">
-<div class="card">
+<div class="card p-4">
 <div class="card-header">
-<h3 class="card-title" style="display:flex;"> Ajouter mes attestations de formation  </h3>       </div>
+<h3 class="card-title" style="display:flex;"> Ajouter mes attestations de formation  </h3>   
+    </div>
         <div class="card-body">
         <form action="" method="post" enctype="multipart/form-data">
         <div class="mb-3">

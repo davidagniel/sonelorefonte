@@ -211,9 +211,9 @@
                         <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
                             <div class="accordion-body" style="background-color:#679bf0;color:white;">
                                 <ul class="list-unstyled">
-                                <li><a class="nav-link active" href="<?=$_SESSION['url']?>view_salarie&style=679bf0">Voir les salariés</a></li>
+                                <li><a class="nav-link active" href="index.php?page=salarie">Voir les salariés</a></li>
                                  
-                                <li><a class="nav-link active" href="<?=$_SESSION['url']?>ajout_salarie&style=679bf0">Ajouter salariés</a></li>
+                                <li><a class="nav-link active" href="index.php?page=ajout_salarie">Ajouter salariés</a></li>
                                        
                             </ul>
                             </div>
