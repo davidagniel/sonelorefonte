@@ -1,6 +1,6 @@
 <div class="row">
 
-<div class="card accueil p-4">
+<div class="card salarie p-4">
                     <div class="card-header">
                     <h3 class="card-title" style="display:flex;"> Voir mes salariés  </h3> </div>
                     <div class="card-body">
