@@ -1,6 +1,6 @@
 <div class="row">
 
-<div class="card accueil">
+<div class="card">
                     <div class="card-header">
                     <h3 class="card-title" style="display:flex;"> <h3>Mes attestations de formation  </h3>  </div>
                     <div class="card-body">
