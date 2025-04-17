@@ -71,6 +71,68 @@
 
 
 
+<div class="row">
+<div class="card p-4 accueil">
+<div class="card-body  d-flex flex-row ">
+                        <div style="width: 25%;display:flex;">
+                            <div style="
+                            display:flex;align-items: center; justify-content: center;
+                            border: 2px solid #6ce364;
+                            border-radius: 2px;
+                           
+                                    width: 50px;
+                                    height:10px;
+                            box-shadow: 0 4px 8px #6ce364;
+                            background-color:#6ce364;">   
+                                
+                            </div>
+                            <div class="textsize" style="width:50%;display:flex;align-items: center; justify-content: center;font-weight: bold;">  A jour </div>
+                        </div>
+                        <div style="width: 25%;display:flex;">
+                                            <div style="
+                                            display:flex;align-items: center; justify-content: center;
+                                            border: 2px solid #6ec2e6;
+                                    border-radius: 2px;
+                                
+                                    width: 50px;
+                                    height:10px;
+                                    box-shadow: 0 4px 8px #6ec2e6;
+                                    background-color:#6ec2e6;">   
+                                            
+                                            </div><div class="textsize" style="width:50%;display:flex;align-items: center; justify-content: center; font-weight: bold;"> Réalisé</div>
+                        </div>
+                        <div style="width: 25%;display:flex;">
+                                        <div style="
+                                        display:flex;align-items: center; justify-content: center;
+                                        border: 2px solid #e0823a;
+                                    border-radius: 2px;
+                                    
+                                   
+                                   width: 50px;
+                                    height:10px;
+                                    box-shadow: 0 4px 8px #e0823a;
+                                    background-color:#e0823a">   
+                                        
+                                            </div><div class="textsize" style="width:50%;display:flex;align-items: center; justify-content: center; font-weight: bold;">  A échéance </div>
+                        </div>
+                        <div style="width: 25%;display:flex;">
+                                            <div style="
+                                            display:flex;align-items: center; justify-content: center;
+                                            border: 2px solid #c90e0e;
+                                    border-radius: 2px;
+                                
+                                  
+                                    width: 50px;
+                                    height:10px;
+                                    box-shadow: 0 4px 8px #c90e0e;
+                                    background-color:#c90e0e;">   
+                                            
+                                            </div>
+                    <div class="textsize" style="width:70%;display:flex;align-items: center; justify-content: center; font-weight: bold;"> Echéance dépassée</div>
+                        </div>
+                    </div>
+</div>
+</div>
 
 
 <div class="row">
