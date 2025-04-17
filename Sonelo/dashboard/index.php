@@ -240,9 +240,9 @@
                         <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
                             <div class="accordion-body bg-warning text-warning" >
                                 <ul class="list-unstyled">
-                                <li><a class="nav-link active" href="<?=$_SESSION['url']?>view_formation_initiale">Formation initiale</a></li>
+                                <li><a class="nav-link active" href="index.php?page=formation_initiale">Formation initiale</a></li>
                                  
-                                <li><a class="nav-link active" href="<?=$_SESSION['url']?>view_formation_continue">Formation continue/e-larning</a></li>
+                                <li><a class="nav-link active" href="index.php?page=formation_elearning">Formation continue/e-larning</a></li>
                                        
                             </ul>
                             </div>
