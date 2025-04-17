@@ -67,7 +67,7 @@
   }
 
 .salarie{
-    width: 50% !important;
+    width: 49% !important;
     overflow-x: auto;
    
   }
