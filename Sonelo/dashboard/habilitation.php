@@ -71,7 +71,7 @@
 
 
 <div class="row">
-<div class="card p-4 accueil">
+<div class="card p-4 certif">
 <div class="card-body  d-flex flex-row ">
                         <div style="width: 25%;display:flex;">
                             <div style="
