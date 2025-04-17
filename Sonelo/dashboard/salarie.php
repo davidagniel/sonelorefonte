@@ -2,7 +2,7 @@
 
 <div class="card">
                     <div class="card-header">
-                    <h3 class="card-title" style="display:flex;"> <div style="width:10%;"><img src="image/Logo-S-rouge-png.png" width="100" height="100"></div><div style="width:90%;display:flex;align-items: center; justify-content: center;">Voir mes salariés </div> </h3> </div>
+                    <h3 class="card-title" style="display:flex;"> Voir mes salariés  </h3> </div>
                     <div class="card-body">
                     <table class='table table-striped table-responsive fixed-table' id="tablesalarieview" style="text-align:center;">
                         <thead>
