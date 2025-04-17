@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
       td.classList.remove("bg-danger","bg-orange");
       td.classList.add("bg-primary", "text-white");
       btn.style.display = "none";
-      const lien =btn.closest("tr").querySelector("search");
+      const lien =btn.closest("tr").querySelector(".search");
     if (lien) {
       lien.style.display = "none";
     }
