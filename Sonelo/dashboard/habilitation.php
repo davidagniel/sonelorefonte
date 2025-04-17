@@ -106,7 +106,7 @@ if($_GET['id_habili']==''){?>
               <td>Date d'obtention</td> <td class="date-obtention">10/10/2021</td> <td><button class="btn btn-dark btn-modifier">modifier</button></td>
 </tr>
 <tr>
-              <td>Obligation de formation</td> <td class="text-white bg-orange obligation" >10/10/2025</td>  <td><a href="#" class="text-dark"><span data-feather="search"></span></a><button class="btn btn-success btn-ok">ok</button></td>
+              <td>Obligation de formation</td> <td class="text-white bg-orange obligation" >10/10/2025</td>  <td><a href="#" class="text-dark search"><span data-feather="search"></span></a><button class="btn btn-success btn-ok">ok</button></td>
 </tr>
 <tr>
               <td>Fin de cycle</td>               <td colspan=2>09/10/2028</td>
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
       td.classList.remove("bg-danger","bg-orange");
       td.classList.add("bg-primary", "text-white");
       btn.style.display = "none";
-      const lien = td.querySelector("a");
+      const lien =btn.closest("tr").querySelector("search");
     if (lien) {
       lien.style.display = "none";
     }
