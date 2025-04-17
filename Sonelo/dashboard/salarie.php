@@ -111,7 +111,7 @@
    
         <div class="card">
 <div class="card-header">
-<h3 class="card-title" style="display:flex;"> <div style="width:10%;"><img src="image/Logo-S-rouge-png.png" width="100" height="100"></div><div style="width:90%;display:flex;align-items: center; justify-content: center;">Ajouter mes attestations de formation </div> </h3>       </div>
+<h3 class="card-title" style="display:flex;">Ajouter mes attestations de formation  </h3>       </div>
         <div class="card-body">
         <form action="" method="post" enctype="multipart/form-data">
         <div class="mb-3">
