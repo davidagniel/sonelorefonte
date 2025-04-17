@@ -66,6 +66,12 @@
    
   }
 
+.salarie{
+    width: 50% !important;
+    overflow-x: auto;
+   
+  }
+  
   .textsize{
     font-size: 7px;
   }
