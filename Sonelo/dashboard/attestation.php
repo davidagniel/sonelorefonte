@@ -31,11 +31,7 @@
                     <td><button class="btn btn-danger" id="supprim" data-ligne="6">supprimer</button></td>
                      
                     </tr>
-                    </tbody>
-
                     
-                    
-                    <tbody>
                     <tr>
                     <td><input type="hidden" value="12" id="ligne">
                     <input type="hidden" value="8" id="id_certif">Diagnostic Gaz</td>
