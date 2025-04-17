@@ -195,7 +195,7 @@
                             <div class="accordion-body" style="background-color:#e08b3a;color:white;">
                                 <ul class="list-unstyled">
                                     <li><a class="nav-link active" href="index.php?page=attestation">Voir mes attestations</a></li>
-                                    <li><a class="nav-link active" href="<?=$_SESSION['url']?>ajout_pdf&style=e08b3a">Ajouter mes attestations</a></li>
+                                    <li><a class="nav-link active" href="index.php?page=ajout_attestation">Ajouter mes attestations</a></li>
                                   
                                 </ul>
                             </div>
