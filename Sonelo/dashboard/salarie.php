@@ -4,7 +4,8 @@
                     <div class="card-header">
                     <h3 class="card-title" style="display:flex;"> Voir mes salariés  </h3> </div>
                     <div class="card-body">
-                    <table class='table table-striped table-responsive fixed-table' id="tablesalarieview" style="text-align:center;">
+                        <div class="table-responsive">
+                    <table class='table table-striped table-sm text-center' id="tablesalarieview" >
                         <thead>
                             <tr>
                                 <th>prénom</th>
@@ -160,7 +161,8 @@
                 
                 
                     </table>
+</div>
                     </div>
                 </div>
-</div>                            </div>
+</div>                          
 
