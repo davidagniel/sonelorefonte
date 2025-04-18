@@ -1,6 +1,6 @@
 <div class="row">    
                      <div class="card p-4">
-                        <div class="card-header align-items-center justify-content-center">
+                        <div class="card-header d-flex align-items-center justify-content-center">
                         <h2 class="card-title"><a href="https://www.sonelo.fr"><img src="image/logo-sonelo-2020.png" width="150" height="70"></a></h2>
                         </div>
                         <div class="card-body">    
@@ -13,7 +13,7 @@
                         </div>
                         </div>                   
     <div class="card p-4">
-          <div class="card-header align-items-center justify-content-center">
+          <div class="card-header d-flex align-items-center justify-content-center">
            <h2 class="card-title"><a href="https://www.sonelo.fr"><img src="image/logo-sonelo-2020.png" width="150" height="70"></a></h2>
         </div>
         <div class="card-body">    
@@ -25,7 +25,7 @@
     </div>
 
     <div class="card p4">
-          <div class="card-header align-items-center justify-content-center">
+          <div class="card-header d-flex align-items-center justify-content-center">
            <h2 class="card-title"><a href="https://sonelo-cfa.fr/"><img src="image/sonelo-cfa.png" width="250" height="70"></a></h2>
         </div>
         <div class="card-body">    
