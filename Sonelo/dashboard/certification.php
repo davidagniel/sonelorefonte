@@ -136,6 +136,7 @@
 
 
 <div class="row">
+
 <?php
 
 if($_GET['id_certif']==''){?>
@@ -148,7 +149,7 @@ if($_GET['id_certif']==''){?>
 
        <div class="accordion" id="accordionExample">
 
-       <div class="accordion-item p-4">
+       <div class="accordion-item p-2">
                         <h2 class="accordion-header" id="headingDPE">
                             <button  class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDPE" aria-expanded="false" aria-controls="collapseDPE">
                                 <span data-feather="layers"></span> DPE</span>
@@ -206,11 +207,16 @@ if($_GET['id_certif']==''){?>
 
 if($_GET['id_certif']==''){?>
 <div class="col-lg-6">
-    <div class="card p-4 ">
-
-    <div class="card-header">
-      <h2 class="card-title d-flex justify-content-start">Gaz</h2>
-    </div>
+<div class="accordion" id="accordionExample">
+<div class="accordion-item p-2">
+                        <h2 class="accordion-header" id="headingGAZ">
+                            <button  class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGAZ" aria-expanded="false" aria-controls="collapseGAZ">
+                                <span data-feather="layers"></span> GAZ</span>
+                            </button>
+                        </h2>
+                        <div id="collapseGAZ" class="accordion-collapse collapse" aria-labelledby="headingGAZ" data-bs-parent="#accordionExample">
+                            <div class="accordion-body" >   
+<div class="card p-2 ">
 
     <div class="card-body">
 
@@ -248,8 +254,12 @@ if($_GET['id_certif']==''){?>
 </tr>
 
         </table>
+</div>
       </div>
     </div> 
+</div>
+</div>
+</div>
 </div>
 </div>
 <?php } ?>
