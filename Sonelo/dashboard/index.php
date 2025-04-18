@@ -248,7 +248,7 @@
                                 <ul class="list-unstyled">
                                 <li><a class="nav-link active" href="index.php?page=formation_initiale">Formation initiale</a></li>
                                  
-                                <li><a class="nav-link active" href="index.php?page=formation_elearning">Formation continue/e-larning</a></li>
+                                <li><a class="nav-link active" href="index.php?page=formation_elearning">Formation continue</a></li>
                                        
                             </ul>
                             </div>
