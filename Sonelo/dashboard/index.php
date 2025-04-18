@@ -246,7 +246,7 @@
                      <div class="accordion-item">
                         <h2 class="accordion-header" id="heading5">
                             <button class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                <span data-feather="book"></span> <span style="">Formations</span>
+                                <span data-feather="book"></span> <span >Formations</span>
                             </button>
                         </h2>
                         <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
