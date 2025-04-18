@@ -148,7 +148,7 @@ if($_GET['id_certif']==''){?>
 
        <div class="accordion" id="accordionExample">
 
-       <div class="accordion-item">
+       <div class="accordion-item p-4">
                         <h2 class="accordion-header" id="headingDPE">
                             <button  class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDPE" aria-expanded="false" aria-controls="collapseDPE">
                                 <span data-feather="layers"></span> DPE</span>
@@ -156,7 +156,7 @@ if($_GET['id_certif']==''){?>
                         </h2>
                         <div id="collapseDPE" class="accordion-collapse collapse" aria-labelledby="headingDPE" data-bs-parent="#accordionExample">
                             <div class="accordion-body" >
-    <div class="card p-4 ">
+    <div class="card p-2 ">
 
     <div class="card-body">
 
