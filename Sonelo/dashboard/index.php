@@ -112,6 +112,12 @@
     
     max-width: 500px; /* ou la largeur minimum nécessaire à ton contenu */
   }
+
+  .contact{
+    width: 300px;
+    height: 200px;
+    
+  }
     }
    .btmenu{
     background-color:#D9D9D9;
