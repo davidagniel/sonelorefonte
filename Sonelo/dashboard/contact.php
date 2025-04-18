@@ -1,7 +1,7 @@
 <div class="row">    
                      <div class="card p-4">
                         <div class="card-header align-items-center justify-content-center">
-                        <h2 class="card-title"><a href="https://www.sonelo.fr"><img src="image/logo-sonelo-2020.png" width="200" height="100"></a></h2>
+                        <h2 class="card-title"><a href="https://www.sonelo.fr"><img src="image/logo-sonelo-2020.png" width="150" height="100"></a></h2>
                         </div>
                         <div class="card-body">    
                             <div class="text-center align-middle fw-bold" style="font-size:30px;">Ile-De-France</div>
@@ -14,7 +14,7 @@
                         </div>                   
     <div class="card p-4">
           <div class="card-header align-items-center justify-content-center">
-           <h2 class="card-title"><a href="https://www.sonelo.fr"><img src="image/logo-sonelo-2020.png" width="200" height="100"></a></h2>
+           <h2 class="card-title"><a href="https://www.sonelo.fr"><img src="image/logo-sonelo-2020.png" width="150" height="100"></a></h2>
         </div>
         <div class="card-body">    
         <div class="text-center align-middle fw-bold" style="font-size:30px;">Avignon</div>
@@ -26,7 +26,7 @@
 
     <div class="card p4">
           <div class="card-header align-items-center justify-content-center">
-           <h2 class="card-title"><a href="https://sonelo-cfa.fr/"><img src="image/sonelo-cfa.png" width="300" height="90"></a></h2>
+           <h2 class="card-title"><a href="https://sonelo-cfa.fr/"><img src="image/sonelo-cfa.png" width="250" height="90"></a></h2>
         </div>
         <div class="card-body">    
         <div class="text-center align-middle fw-bold" style="font-size:30px;">CFA</div>
