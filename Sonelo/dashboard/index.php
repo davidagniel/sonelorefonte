@@ -24,11 +24,6 @@
             margin-left: -250px;
         }
 
-        /* Content */
-        .content {
-            transition: all 0.3s;
-        }
-
         /* Mobile */
         @media (max-width: 768px) {
             .sidebar {
@@ -50,7 +45,14 @@
 
     <span class="navbar-brand fw-bold">🚀 MonSite</span>
 
-    <div class="ms-auto">
+    <div class="ms-auto d-flex align-items-center gap-2">
+
+        <!-- SWITCH THEME -->
+        <button id="themeToggle" class="btn btn-outline-secondary">
+            <i id="themeIcon" class="bi bi-moon-fill"></i>
+        </button>
+
+        <!-- AVATAR -->
         <button class="btn btn-outline-secondary">
             <i class="bi bi-person-circle"></i>
         </button>
@@ -78,7 +80,7 @@
     </aside>
 
     <!-- CONTENT -->
-    <main class="content flex-grow-1 p-4">
+    <main class="flex-grow-1 p-4">
 
         <div class="row g-4">
 
@@ -142,16 +144,39 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
+    // ===== SIDEBAR =====
     const sidebar = document.getElementById("sidebar");
     const toggleSidebar = document.getElementById("toggleSidebar");
 
-    // Mobile = sidebar fermée par défaut
     if (window.innerWidth < 768) {
         sidebar.classList.add("collapsed");
     }
 
     toggleSidebar.addEventListener("click", () => {
         sidebar.classList.toggle("collapsed");
+    });
+
+    // ===== THEME SWITCH =====
+    const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = document.getElementById("themeIcon");
+    const html = document.documentElement;
+
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    html.setAttribute("data-bs-theme", savedTheme);
+    themeIcon.className = savedTheme === "dark"
+        ? "bi bi-moon-fill"
+        : "bi bi-sun-fill";
+
+    themeToggle.addEventListener("click", () => {
+        const currentTheme = html.getAttribute("data-bs-theme");
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+        html.setAttribute("data-bs-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+
+        themeIcon.className = newTheme === "dark"
+            ? "bi bi-moon-fill"
+            : "bi bi-sun-fill";
     });
 </script>
 
