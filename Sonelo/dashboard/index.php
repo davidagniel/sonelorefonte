@@ -53,9 +53,9 @@
         </button>
 
         <!-- AVATAR -->
-        <button class="btn btn-outline-secondary">
-            <i class="bi bi-person-circle"></i>
-        </button>
+        <a href="profil.php" class="btn btn-outline-secondary">
+    <i class="bi bi-person-circle"></i>
+</a>
     </div>
 </nav>
 
