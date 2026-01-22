@@ -95,4 +95,124 @@
                          class="avatar-preview mb-2">
                     <div>
                         <input type="file" class="form-control" accept="image/*"
-                               onchange
+                               onchange="previewImage(event, 'avatarPreview')">
+                    </div>
+                </div>
+
+                <!-- INFOS -->
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <label class="form-label">Prénom</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Nom</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Téléphone</label>
+                        <input type="tel" class="form-control">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control">
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label">Adresse</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">Code postal</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-8">
+                        <label class="form-label">Ville</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label">Société</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <!-- LOGO SOCIETE -->
+                    <div class="col-12">
+                        <label class="form-label">Logo société</label>
+                        <input type="file" class="form-control" accept="image/*"
+                               onchange="previewImage(event, 'companyPreview')">
+                        <img id="companyPreview" class="company-preview mt-2">
+                    </div>
+
+                    <!-- SWITCH SMS -->
+                    <div class="col-12">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="smsSwitch">
+                            <label class="form-check-label" for="smsSwitch">
+                                Recevoir des SMS
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-4">
+                    <button class="btn btn-primary">Enregistrer</button>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Sidebar
+    const sidebar = document.getElementById("sidebar");
+    const toggleSidebar = document.getElementById("toggleSidebar");
+
+    if (window.innerWidth < 768) sidebar.classList.add("collapsed");
+
+    toggleSidebar.addEventListener("click", () => {
+        sidebar.classList.toggle("collapsed");
+    });
+
+    // Theme
+    const html = document.documentElement;
+    const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = document.getElementById("themeIcon");
+
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    html.setAttribute("data-bs-theme", savedTheme);
+    themeIcon.className = savedTheme === "dark"
+        ? "bi bi-moon-fill"
+        : "bi bi-sun-fill";
+
+    themeToggle.addEventListener("click", () => {
+        const theme = html.getAttribute("data-bs-theme") === "dark" ? "light" : "dark";
+        html.setAttribute("data-bs-theme", theme);
+        localStorage.setItem("theme", theme);
+        themeIcon.className = theme === "dark"
+            ? "bi bi-moon-fill"
+            : "bi bi-sun-fill";
+    });
+
+    // Preview images
+    function previewImage(event, id) {
+        const reader = new FileReader();
+        reader.onload = () => document.getElementById(id).src = reader.result;
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
+
+</body>
+</html>
