@@ -1,333 +1,159 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-bs-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page avec Sidebar</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-     background-color: #f0f0f0;
-    }
-.bg-orange{
-  background-color: #fd7e14 !important;
-}
-    .wrapper {
-      display: flex;
-      min-height: 100vh;
-    }
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    #sidebar {
-      width: 250px;
-      background-color: #343a40;
-      color: white;
-      padding: 1rem;
-    }
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-    #sidebar .nav-link {
-      color: white;
-    }
+    <style>
+        body {
+            overflow-x: hidden;
+        }
 
-    #main-content {
-      flex-grow: 1;
-      padding: 2rem;
-    }
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            transition: all 0.3s;
+        }
 
-    /* Mobile styles */
-    @media (max-width: 768px) {
-      #sidebar {
-        position: fixed;
-        top: 56px; /* height of navbar */
-        left: -250px;
-        height: 100%;
-        z-index: 1030;
-        transition: left 0.3s ease;
-      }
+        .sidebar.collapsed {
+            margin-left: -250px;
+        }
 
-      #sidebar.show {
-        left: 0;
-      }
+        /* Content */
+        .content {
+            transition: all 0.3s;
+        }
 
-      #main-content {
-        padding: 1rem;
-      }
-
-      .card {
-    width: 100% !important;
-    overflow-x: auto;
-   
-  }
-
-  .accueil{
-    width: 63% !important;
-    overflow-x: auto;
-   
-  }
-
-.salarie{
-    width: 45% !important;
-    overflow-x: auto;
-   
-  }
-  
-  .textsize{
-    font-size: 7px;
-  }
-
-  .card-body{
-    font-size: 0.8rem;
-    padding: 0.5rem;
-  }
-      .card-title {
-                font-size: 1.2rem;
+        /* Mobile */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: absolute;
+                height: 100vh;
+                z-index: 1050;
             }
-            .table th, .table td {
-                font-size: 0.8rem;
-                padding: 0.5rem;
-            }
-            .table img {
-                width: 30px;
-                height: 30px;
-            }
-
-            .mini-img{
-              width: 100px;
-              height:50px;
-            }
-
-            .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
-  .table-responsive {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .table {
-    width: 100%;
-    
-    max-width: 500px; /* ou la largeur minimum nécessaire à ton contenu */
-  }
-
-  .contact{
-    width: 300px;
-    height: 200px;
-    
-  }
-    }
-   .btmenu{
-    background-color:#D9D9D9;
-   }
-  </style>
+        }
+    </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-secondary bg-secondary d-md-none">
-    <div class="container-fluid">
-      
-      <button class="btn btn-light" id="toggleSidebar">
-        ☰
-      </button>
-  
-      <span class="navbar-brand mb-1 h1 ms-auto"> <img src="image/AlerteCertif-accueil.png" width="150" height="50" alt="logo"/></span>
-      <div class="row">
-  <!-- Premier span centré -->
-  <div class="col text-center">
-    <span class="navbar-brand mb-0 h1">
-      <img src="image/image_societe.png" width="150" height="70" alt="societe">
-    </span>
-  </div>
+<!-- HEADER -->
+<nav class="navbar navbar-expand navbar-dark bg-body border-bottom px-3">
+    <button class="btn btn-outline-secondary me-3" id="toggleSidebar">
+        <i class="bi bi-list"></i>
+    </button>
 
-  <!-- Deuxième span à droite -->
-  <div class="col justify-content-end">
-  <span style="  font-size: 0.8rem;">    bonjour<br> Sonelo </span>
-  </div>
-  <div class="col">
-    <div style ="width:100px;" class="justify-content-end">
-    <a href="index.php?page=profil">
-      <img src="image/image_profil.png" width="50" height="50" alt="profil">
-    </a>
-    <br>
-<span style="  font-size: 0.8rem;">    mon profil<span>
-  </div>
-</div>
-</div>
+    <span class="navbar-brand fw-bold">🚀 MonSite</span>
+
+    <div class="ms-auto">
+        <button class="btn btn-outline-secondary">
+            <i class="bi bi-person-circle"></i>
+        </button>
     </div>
-  </nav>
+</nav>
 
-  <div class="wrapper">
-  <!-- Sidebar -->
-  <nav id="sidebar" class="d-md-block bg-secondary text-dark p-1">
- 
-    <div class="accordion" id="accordionExample">
+<div class="d-flex">
 
-<!-- accueil -->
+    <!-- SIDEBAR -->
+    <aside class="sidebar bg-body-tertiary border-end p-3" id="sidebar">
+        <ul class="nav flex-column gap-2">
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="bi bi-house"></i> Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-person"></i> Profil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-gear"></i> Paramètres</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-danger" href="#"><i class="bi bi-box-arrow-right"></i> Déconnexion</a>
+            </li>
+        </ul>
+    </aside>
 
-        <div class="accordion-item">
-             <h2 class="accordion-header" id="heading">
-         
-            <a class="nav-link accordion-button collapsed text-dark btmenu"  href="index.php?page=accueil"><span data-feather="tablet"></span>accueil</a>
-         
-            </h2>
-      
-     
-         </div>
+    <!-- CONTENT -->
+    <main class="content flex-grow-1 p-4">
 
-                    <!-- Certification Section -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button  class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <span data-feather="layers"></span> <span style="color:#6ce364;">Mes certifications<br>Habilitations</span>
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body" style="background-color:#6ce364;color:white;">
-                                <ul class="list-unstyled">
-                                <li><a class="nav-link active" href="index.php?page=certification">Voir mes Certifications</a></li>
-                                <li><a class="nav-link active" href="index.php?page=habilitation">Voir mes Habilitations</a></li>
-                                 
-                                <li><a class="nav-link active" href="index.php?page=ajout_certif">Ajouter Certification<br>habilitation</a></li>
-                                 </ul>
-                            </div>
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <span>Cadre 1</span>
+                        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#card1">
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div id="card1" class="collapse show">
+                        <div class="card-body">
+                            Contenu du cadre 1
                         </div>
                     </div>
-                   
-                    <!-- Coffre-fort Section -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <span data-feather="archive"></span> <span style="color:#e08b3a;">Mon coffre-fort </span>
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body" style="background-color:#e08b3a;color:white;">
-                                <ul class="list-unstyled">
-                                    <li><a class="nav-link active" href="index.php?page=attestation">Voir mes attestations</a></li>
-                                    <li><a class="nav-link active" href="index.php?page=ajout_attestation">Ajouter mes attestations</a></li>
-                                  
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- salarie Section -->
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading4">
-                            <button class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                <span data-feather="users"></span> <span style="color:#679bf0;">Mes salariés</span>
-                            </button>
-                        </h2>
-                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
-                            <div class="accordion-body" style="background-color:#679bf0;color:white;">
-                                <ul class="list-unstyled">
-                                <li><a class="nav-link active" href="index.php?page=salarie">Voir les salariés</a></li>
-                                 
-                                <li><a class="nav-link active" href="index.php?page=ajout_salarie">Ajouter salariés</a></li>
-                                       
-                            </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- contact Section -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading">
-                           
-                              <a class="nav-link text-dark accordion-button collapsed"  href="index.php?page=contact"><span data-feather="phone"></span>Contact</a>
-                           
-                        </h2>
-                        
-                       
-                    </div>
-
-                     <!-- formation Section -->
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading5">
-                            <button class="accordion-button collapsed btmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                <span data-feather="book"></span> <span >Formations</span>
-                            </button>
-                        </h2>
-                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
-                            <div class="accordion-body bg-warning text-warning" >
-                                <ul class="list-unstyled">
-                                <li><a class="nav-link active" href="index.php?page=formation_initiale">Formation initiale</a></li>
-                                 
-                                <li><a class="nav-link active" href="index.php?page=formation_elearning">Formation continue</a></li>
-                                       
-                            </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="deconnexion.php">Déconnexion</a>
-                
+                </div>
             </div>
 
-  </nav>
+            <!-- CARD 2 -->
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <span>Cadre 2</span>
+                        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#card2">
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div id="card2" class="collapse show">
+                        <div class="card-body">
+                            Contenu du cadre 2
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Main content -->
-  <main class=" p-4">
-  <div class="container-fluid">
-<div class="d-none d-lg-block bg-secondary ">
-<div class="row align-items-center">
+            <!-- CARD 3 -->
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <span>Cadre 3</span>
+                        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#card3">
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div id="card3" class="collapse show">
+                        <div class="card-body">
+                            Contenu du cadre 3
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<div class="col-lg-4">
-<img src="image/AlerteCertif-accueil.png" width="250" height="100" alt="logo"/>
-  </div>
+        </div>
 
-  <div class="col-lg-4">
-<img src="image/image_societe.png" width="200" height="100" alt="logo"/>
-  </div>
-
-  <div class="col-lg-4 d-flex flex-row">
-    <h4>Bonjour Sonelo</h4>
- <div class="p-4">   
-<a  href="index.php?page=profil" class="ms-auto"><img src="image/image_profil.png" width="50" height="50" alt="logo"/></a>
-<br>
-mon profil
-  </div>
-  </div>
-
-  </div>
-
-<div class="row">
-
-<h1 class="text-white text-center">Bienvenue sur votre plateforme de suivi de certification</h1>
-  </div>
-  </div>
-
-  <?php
-  if(isset($_GET['page'])){
-    include($_GET['page'].'.php');
-
-  }else{
-  include('accueil.php');}
-  ?>
-
-  </div>
-  </main>
+    </main>
 </div>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- jQuery + Bootstrap JS -->
-  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-  <script>
-    feather.replace();
-    </script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('#toggleSidebar').click(function () {
-        $('#sidebar').toggleClass('show');
-      });
+<script>
+    const sidebar = document.getElementById("sidebar");
+    const toggleSidebar = document.getElementById("toggleSidebar");
 
-      $('#testBtn').click(function () {
-        alert("Bouton cliqué !");
-      });
+    // Mobile = sidebar fermée par défaut
+    if (window.innerWidth < 768) {
+        sidebar.classList.add("collapsed");
+    }
+
+    toggleSidebar.addEventListener("click", () => {
+        sidebar.classList.toggle("collapsed");
     });
-  </script>
+</script>
 
 </body>
 </html>
