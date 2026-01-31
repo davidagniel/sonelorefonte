@@ -88,68 +88,77 @@
 
     </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <!-- JS -->
 <script>
-    // ===== THEME SWITCH =====
-    const themeToggle = document.getElementById("themeToggle");
-    const themeIcon = document.getElementById("themeIcon");
-    const html = document.documentElement;
+ $(document).ready(function () {
 
-    const savedTheme = localStorage.getItem("theme") || "dark";
-    html.setAttribute("data-bs-theme", savedTheme);
-    themeIcon.className = savedTheme === "dark" ? "bi bi-moon-fill" : "bi bi-sun-fill";
+    /* ===== THEME SWITCH ===== */
+    const $html = $("html");
+    const $themeIcon = $("#themeIcon");
 
-    themeToggle.addEventListener("click", () => {
-        const currentTheme = html.getAttribute("data-bs-theme");
-        const newTheme = currentTheme === "dark" ? "light" : "dark";
+    let savedTheme = localStorage.getItem("theme") || "dark";
+    $html.attr("data-bs-theme", savedTheme);
+    $themeIcon
+        .removeClass()
+        .addClass(savedTheme === "dark" ? "bi bi-moon-fill" : "bi bi-sun-fill");
 
-        html.setAttribute("data-bs-theme", newTheme);
+    $("#themeToggle").on("click", function () {
+        let currentTheme = $html.attr("data-bs-theme");
+        let newTheme = currentTheme === "dark" ? "light" : "dark";
+
+        $html.attr("data-bs-theme", newTheme);
         localStorage.setItem("theme", newTheme);
-        themeIcon.className = newTheme === "dark" ? "bi bi-moon-fill" : "bi bi-sun-fill";
+
+        $themeIcon
+            .removeClass()
+            .addClass(newTheme === "dark" ? "bi bi-moon-fill" : "bi bi-sun-fill");
     });
 
-    // ===== PASSWORD TOGGLE =====
-    const password = document.getElementById("password");
-    const togglePassword = document.getElementById("togglePassword");
+    /* ===== PASSWORD TOGGLE ===== */
+    $("#togglePassword").on("click", function () {
+        let $password = $("#password");
+        let type = $password.attr("type") === "password" ? "text" : "password";
+        $password.attr("type", type);
 
-    togglePassword.addEventListener("click", () => {
-        const type = password.getAttribute("type") === "password" ? "text" : "password";
-        password.setAttribute("type", type);
-        togglePassword.innerHTML = type === "password"
-            ? '<i class="bi bi-eye"></i>'
-            : '<i class="bi bi-eye-slash"></i>';
+        $(this).html(
+            type === "password"
+                ? '<i class="bi bi-eye"></i>'
+                : '<i class="bi bi-eye-slash"></i>'
+        );
     });
 
-    // ===== FORM VALIDATION =====
-    const form = document.getElementById("loginForm");
-    const email = document.getElementById("email");
-
-    form.addEventListener("submit", function (e) {
+    /* ===== FORM VALIDATION ===== */
+    $("#loginForm").on("submit", function (e) {
         e.preventDefault();
         let valid = true;
 
-        if (!email.value || !email.value.includes("@")) {
-            email.classList.add("is-invalid");
+        let $email = $("#email");
+        let $password = $("#password");
+
+        // Email
+        if (!$email.val() || !$email.val().includes("@")) {
+            $email.addClass("is-invalid").removeClass("is-valid");
             valid = false;
         } else {
-            email.classList.remove("is-invalid");
-            email.classList.add("is-valid");
+            $email.addClass("is-valid").removeClass("is-invalid");
         }
 
-        if (!password.value || password.value.length < 6) {
-            password.classList.add("is-invalid");
+        // Password
+        if (!$password.val() || $password.val().length < 6) {
+            $password.addClass("is-invalid").removeClass("is-valid");
             valid = false;
         } else {
-            password.classList.remove("is-invalid");
-            password.classList.add("is-valid");
+            $password.addClass("is-valid").removeClass("is-invalid");
         }
 
         if (valid) {
             alert("Connexion validée ✔️");
-            // form.submit();
+            // this.submit();
         }
     });
+
+});
 </script>
 
 </body>
