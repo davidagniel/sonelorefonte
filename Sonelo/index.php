@@ -129,34 +129,45 @@
     });
 
     /* ===== FORM VALIDATION ===== */
-    $("#loginForm").on("submit", function (e) {
+ $("#loginForm").on("submit", function (e) {
         e.preventDefault();
-        let valid = true;
 
-        let $email = $("#email");
-        let $password = $("#password");
+        let email = $("#email").val().trim();
+        let password = $("#password").val();
 
-        // Email
-        if (!$email.val() || !$email.val().includes("@")) {
-            $email.addClass("is-invalid").removeClass("is-valid");
-            valid = false;
-        } else {
-            $email.addClass("is-valid").removeClass("is-invalid");
+        if (!email || !password) {
+            alert("Veuillez remplir tous les champs");
+            return;
         }
 
-        // Password
-        if (!$password.val() || $password.val().length < 6) {
-            $password.addClass("is-invalid").removeClass("is-valid");
-            valid = false;
-        } else {
-            $password.addClass("is-valid").removeClass("is-invalid");
-        }
-
-        if (valid) {
-            alert("Connexion validée ✔️");
-            // this.submit();
-        }
+        $.ajax({
+            url: "php/login.php",
+            type: "POST",
+            dataType: "json",
+            data: {
+                email: email,
+                password: password
+            },
+            beforeSend: function () {
+                $("button[type=submit]").prop("disabled", true).text("Connexion...");
+            },
+            success: function (response) {
+                if (response.success) {
+                    window.location.href = response.redirect;
+                } else {
+                    alert(response.message);
+                }
+            },
+            error: function () {
+                alert("Erreur serveur");
+            },
+            complete: function () {
+                $("button[type=submit]").prop("disabled", false).text("Se connecter");
+            }
+        });
     });
+
+
 
 });
 </script>
