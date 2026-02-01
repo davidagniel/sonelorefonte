@@ -2,7 +2,7 @@
 session_start();
 header("Content-Type: application/json");
 
-require_once "/php/db.php";
+require_once "db.php";
 
 $email = trim($_POST["email"] ?? "");
 $password = $_POST["password"] ?? "";
