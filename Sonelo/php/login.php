@@ -6,6 +6,7 @@ require_once "/php/db.php";
 
 $email = trim($_POST["email"] ?? "");
 $password = $_POST["password"] ?? "";
+$passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
 if (!$email || !$password) {
     echo json_encode([
@@ -16,7 +17,7 @@ if (!$email || !$password) {
 }
 
 // Récupération utilisateur
-$stmt = $pdo->prepare("SELECT id, password, prenom FROM users WHERE email = ?");
+$stmt = $pdo->prepare("SELECT id, password, prenom FROM compte WHERE email = ?");
 $stmt->execute([$email]);
 $user = $stmt->fetch();
 
@@ -34,5 +35,5 @@ $_SESSION["prenom"] = $user["prenom"];
 
 echo json_encode([
     "success" => true,
-    "redirect" => "index.php"
+    "redirect" => "/dashboard/index.php"
 ]);
