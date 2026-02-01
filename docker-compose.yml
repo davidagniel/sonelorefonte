@@ -14,7 +14,7 @@ services:
     depends_on:
       - dbsonelorefonte
     environment:
-      - MYSQL_HOST=dbsonelofronte
+      - MYSQL_HOST=dbsonelorefonte
       - MYSQL_USER=sonelo
       - MYSQL_PASSWORD=1#2*DFjvcftifgkE456
       - MYSQL_DATABASE=sonelo
@@ -39,7 +39,7 @@ services:
     image: phpmyadmin:latest
     container_name: phpmyadminsonelorefonte
     environment:
-      PMA_HOST: dbsonelorefronte
+      PMA_HOST: dbsonelorefonte
       #PMA_USER: sonelo
       #PMA_PASSWORD: 1#2*DFjvcftifgkE456
     ports:
