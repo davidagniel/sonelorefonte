@@ -39,7 +39,7 @@ services:
     image: phpmyadmin:latest
     container_name: phpmyadminsonelorefonte
     environment:
-      PMA_HOST: dbsonelofronte
+      PMA_HOST: dbsonelorefronte
       #PMA_USER: sonelo
       #PMA_PASSWORD: 1#2*DFjvcftifgkE456
     ports:
