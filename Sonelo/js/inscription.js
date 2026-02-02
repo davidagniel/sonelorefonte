@@ -10,64 +10,75 @@
             icon.className = "bi bi-eye";
         }
     }
-$(document).ready(function () {
-    /* === VALIDATION JS === */
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{12,}$/;
-    const phoneRegex = /^(06|07)[0-9]{8}$/;
+    $(document).ready(function () {
+  const pwdRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{12,}$/;
+    const telRegex = /^(06|07)[0-9]{8}$/;
 
-    const password = $("#password");
-    const passwordConfirm = $("#passwordConfirm");
-    const phone = $("#telephone");
-    const email = $("#email");
+    let emailValid = false;
 
-    /* Mot de passe */
-    password.on("input", function() {
-        if(!passwordRegex.test(this.value)){
-            $(this).addClass("is-invalid").removeClass("is-valid");
-        }else{
-            $(this).removeClass("is-invalid").addClass("is-valid");
-        }
-        passwordConfirm.trigger("input");
-    });
+    /* ================= EMAIL LIVE CHECK ================= */
+    $("#email").on("blur", function () {
+        const email = $(this).val();
+        if (!email) return;
 
-    /* Confirmation */
-    passwordConfirm.on("input", function() {
-        if(this.value !== password.val() || this.value === ""){
-            $(this).addClass("is-invalid").removeClass("is-valid");
-        }else{
-            $(this).removeClass("is-invalid").addClass("is-valid");
-        }
-    });
-
-    /* Téléphone */
-    phone.on("input", function(){
-        if(this.value && !phoneRegex.test(this.value)){
-            $(this).addClass("is-invalid").removeClass("is-valid");
-        }else{
-            $(this).removeClass("is-invalid").addClass("is-valid");
-        }
-    });
-
-    /* Email existant via AJAX */
-    let emailTimeout = null;
-    email.on("input", function(){
-        clearTimeout(emailTimeout);
-        const val = this.value;
-        if(!val.includes("@")) return;
-
-        emailTimeout = setTimeout(() => {
-            $.post("php/check-email.php", {email: val}, function(res){
-                if(res.exists){
-                    email.addClass("is-invalid").removeClass("is-valid");
-                }else{
-                    email.removeClass("is-invalid").addClass("is-valid");
+        $.ajax({
+            url: "ajax/check-email.php",
+            method: "POST",
+            dataType: "json",
+            data: { email: email },
+            success: function (res) {
+                if (res.exists) {
+                    $("#email").addClass("is-invalid").removeClass("is-valid");
+                    $("#emailFeedback").text("Email déjà utilisé");
+                    emailValid = false;
+                } else {
+                    $("#email").removeClass("is-invalid").addClass("is-valid");
+                    $("#emailFeedback").text("");
+                    emailValid = true;
                 }
-            },"json");
-        }, 500);
+            }
+        });
     });
 
-    /* Submit */
-   $("#registerForm").on("submit", function (e) {
+    /* ================= PASSWORD STRENGTH ================= */
+    $("#password").on("input", function () {
+        if (!pwdRegex.test(this.value)) {
+            $(this).addClass("is-invalid").removeClass("is-valid");
+            $("#passwordFeedback").text(
+                "12 caractères min, majuscule, minuscule, chiffre et caractère spécial"
+            );
+        } else {
+            $(this).removeClass("is-invalid").addClass("is-valid");
+            $("#passwordFeedback").text("");
+        }
+    });
+
+    /* ================= CONFIRM PASSWORD ================= */
+    $("#password_confirm").on("input", function () {
+        if (this.value !== $("#password").val()) {
+            $(this).addClass("is-invalid").removeClass("is-valid");
+            $("#confirmFeedback").text("Les mots de passe ne correspondent pas");
+        } else {
+            $(this).removeClass("is-invalid").addClass("is-valid");
+            $("#confirmFeedback").text("");
+        }
+    });
+
+    /* ================= TELEPHONE ================= */
+    $("#telephone").on("input", function () {
+        this.value = this.value.replace(/\D/g, "");
+
+        if (!telRegex.test(this.value)) {
+            $(this).addClass("is-invalid").removeClass("is-valid");
+            $("#telFeedback").text("Numéro invalide (06 ou 07 + 8 chiffres)");
+        } else {
+            $(this).removeClass("is-invalid").addClass("is-valid");
+            $("#telFeedback").text("");
+        }
+    });
+
+    /* ================= SUBMIT AJAX ================= */
+    $("#registerForm").on("submit", function (e) {
         e.preventDefault();
 
         if (!emailValid ||
@@ -79,7 +90,7 @@ $(document).ready(function () {
         const formData = new FormData(this);
 
         $.ajax({
-            url: "php/inscription.php",
+            url: "ajax/register.php",
             method: "POST",
             data: formData,
             processData: false,
@@ -100,7 +111,7 @@ $(document).ready(function () {
         });
     });
 
-     });
+});
 
 
 
