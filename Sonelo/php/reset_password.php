@@ -11,7 +11,7 @@ if (!$token || strlen($password) < 6) {
 }
 
 $stmt = $pdo->prepare("
-    SELECT id FROM users 
+    SELECT id FROM compte 
     WHERE token = ? AND expire > NOW()
 ");
 $stmt->execute([$token]);
@@ -25,8 +25,8 @@ if (!$user) {
 $hash = password_hash($password, PASSWORD_DEFAULT);
 
 $pdo->prepare("
-    UPDATE users 
-    SET password = ?, reset_token = NULL, reset_expire = NULL
+    UPDATE compte 
+    SET password = ?, token = NULL, expire = NULL
     WHERE id = ?
 ")->execute([$hash, $user["id"]]);
 

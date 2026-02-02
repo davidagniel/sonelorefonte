@@ -9,7 +9,7 @@ if (!$email) {
     exit;
 }
 
-$stmt = $pdo->prepare("SELECT id FROM users WHERE email = ?");
+$stmt = $pdo->prepare("SELECT id FROM compte WHERE email = ?");
 $stmt->execute([$email]);
 $user = $stmt->fetch();
 

@@ -82,7 +82,7 @@
                         Se connecter
                     </button>
                     <div class="text-center mt-3">
-    <a href="forgot-password.html" class="d-block mb-2">
+    <a href="forgot_pass.php" class="d-block mb-2">
         Mot de passe oublié ?
     </a>
 
