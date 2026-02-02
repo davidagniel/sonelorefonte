@@ -13,7 +13,7 @@ function clean($data) {
 
 
 
-if (!preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{12,}$/', $password)) {
+if (!preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{12,}$/', $password)) {
     echo json_encode(["status"=>"error","message"=>"Mot de passe trop faible"]);
     exit;
 }
