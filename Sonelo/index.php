@@ -81,7 +81,15 @@
                     <button type="submit" class="btn btn-primary w-100">
                         Se connecter
                     </button>
+                    <div class="text-center mt-3">
+    <a href="forgot-password.html" class="d-block mb-2">
+        Mot de passe oublié ?
+    </a>
 
+    <a href="register.html" class="btn btn-outline-secondary w-100">
+        Créer un compte
+    </a>
+</div>
                 </form>
             </div>
         </div>
