@@ -13,6 +13,23 @@ function clean($data) {
 
 
 
+
+
+
+
+
+
+$prenom     = clean($_POST["prenom"] ?? "");
+$nom        = clean($_POST["nom"] ?? "");
+$email      = clean($_POST["email"] ?? "");
+$telephone  = clean($_POST["telephone"] ?? "");
+$password   = $_POST["password"] ?? "";
+$adresse    = clean($_POST["adresse"] ?? "");
+$cp         = clean($_POST["cp"] ?? "");
+$ville      = clean($_POST["ville"] ?? "");
+$societe    = clean($_POST["societe"] ?? "");
+$sms        = isset($_POST["sms"]) ? 1 : 0;
+
 if (!preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{12,}$/', $password)) {
     echo json_encode(["status"=>"error","message"=>"Mot de passe trop faible"]);
     exit;
@@ -30,21 +47,6 @@ if ($telephone && !preg_match('/^(06|07)[0-9]{8}$/', $telephone)) {
     exit;
 }
 
-
-
-
-
-
-$prenom     = clean($_POST["prenom"] ?? "");
-$nom        = clean($_POST["nom"] ?? "");
-$email      = clean($_POST["email"] ?? "");
-$telephone  = clean($_POST["telephone"] ?? "");
-$password   = $_POST["password"] ?? "";
-$adresse    = clean($_POST["adresse"] ?? "");
-$cp         = clean($_POST["cp"] ?? "");
-$ville      = clean($_POST["ville"] ?? "");
-$societe    = clean($_POST["societe"] ?? "");
-$sms        = isset($_POST["sms"]) ? 1 : 0;
 
 if (!$prenom || !$nom || !$email || strlen($password) < 6) {
     echo json_encode(["status" => "error", "message" => "Champs obligatoires manquants"]);
