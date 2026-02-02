@@ -11,7 +11,7 @@
         }
     }
     $(document).ready(function () {
-  const pwdRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{12,}$/;
+  const pwdRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{12,}$/;
     const telRegex = /^(06|07)[0-9]{8}$/;
 
     let emailValid = false;
