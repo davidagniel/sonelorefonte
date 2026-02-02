@@ -22,7 +22,7 @@
         if (!email) return;
 
         $.ajax({
-            url: "ajax/check-email.php",
+            url: "php/check-email.php",
             method: "POST",
             dataType: "json",
             data: { email: email },
@@ -90,7 +90,7 @@
         const formData = new FormData(this);
 
         $.ajax({
-            url: "ajax/register.php",
+            url: "php/inscription.php",
             method: "POST",
             data: formData,
             processData: false,
