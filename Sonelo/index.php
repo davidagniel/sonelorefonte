@@ -86,7 +86,7 @@
         Mot de passe oublié ?
     </a>
 
-    <a href="register.html" class="btn btn-outline-secondary w-100">
+    <a href="creation_compte.php" class="btn btn-outline-secondary w-100">
         Créer un compte
     </a>
 </div>
