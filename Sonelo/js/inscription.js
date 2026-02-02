@@ -54,7 +54,7 @@
     });
 
     /* ================= CONFIRM PASSWORD ================= */
-    $("#password_confirm").on("input", function () {
+    $("#passwordConfirm").on("input", function () {
         if (this.value !== $("#password").val()) {
             $(this).addClass("is-invalid").removeClass("is-valid");
             $("#confirmFeedback").text("Les mots de passe ne correspondent pas");
