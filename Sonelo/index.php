@@ -81,10 +81,7 @@
                     <button type="submit" class="btn btn-primary w-100">
                         Se connecter
                     </button>
-<?php
- $passwordHash = password_hash('DArude1985.', PASSWORD_DEFAULT);
-echo $passwordHash;
-?>
+
                 </form>
             </div>
         </div>
