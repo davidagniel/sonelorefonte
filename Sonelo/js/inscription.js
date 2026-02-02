@@ -10,7 +10,7 @@
             icon.className = "bi bi-eye";
         }
     }
-
+$(document).ready(function () {
     /* === VALIDATION JS === */
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{12,}$/;
     const phoneRegex = /^(06|07)[0-9]{8}$/;
@@ -100,7 +100,7 @@
         });
     });
 
- 
+     });
 
 
 
