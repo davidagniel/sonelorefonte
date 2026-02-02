@@ -56,7 +56,7 @@
         if(!val.includes("@")) return;
 
         emailTimeout = setTimeout(() => {
-            $.post("ajax/check-email.php", {email: val}, function(res){
+            $.post("php/check-email.php", {email: val}, function(res){
                 if(res.exists){
                     email.addClass("is-invalid").removeClass("is-valid");
                 }else{
